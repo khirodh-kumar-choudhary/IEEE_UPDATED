@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="assets/LOGO_Updated.png" type="image/x-icon">
+    <title>IEEE Sponsors</title>
+    <!-- <link rel="stylesheet" href="regstyles.css"> -->
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css" />
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.css" />
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="sponserstyles.css">
+</head>
+<body>
+  
+    <nav class="z-50 bg-white shadow-lg fixed top-0 w-full">
+        <div class="container mx-auto flex justify-between items-center p-4">
+            <div class="nav-links hidden md:flex justify-center items-center">
+                <ul class="flex space-x-4">
+                    <li><a class="text-2xl text-gray-700 hover:text-gray-900 transition duration-300 font-bold" href="index.html">Home</a></li>
+                    <li><a class="text-2xl text-gray-700 hover:text-gray-900 transition duration-300 font-bold" href="committee.html">Committee</a></li>
+                    <li><a class="text-2xl text-gray-700 hover:text-gray-900 transition duration-300 font-bold" href="sponsors.html">Sponsors</a></li>
+                    <li class="relative group">
+                        <div class="dropdown">
+                            <a class="text-2xl text-gray-700 hover:text-gray-900 transition duration-300 flex items-center font-bold" href="#">
+                                Author Guidelines
+                                <svg class="w-6 h-6 ml-1 text-gray-500 group-hover:text-gray-700 transition duration-300 dropdown-indicator" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                                </svg>
+                            </a>
+                            <div class="dropdown-content hidden group-hover:block absolute bg-white shadow-lg mt-1">
+                                <a class="text-xl block px-4 py-2 text-gray-700 hover:bg-gray-100" href="CallforPapers.html">Call For Papers</a>
+                                <a class="text-xl block px-4 py-2 text-gray-700 hover:bg-gray-100" href="Important Dates.html">Important Dates</a>
+                                <a class="text-xl block px-4 py-2 text-gray-700 hover:bg-gray-100" href="PaperSubmission.html">Paper-Submission</a>
+                                <a class="text-xl block px-4 py-2 text-gray-700 hover:bg-gray-100" href="Accomadation.html">Accommodation</a>
+                                <a class="text-xl block px-4 py-2 text-gray-700 hover:bg-gray-100" href="siteseeing.html">SiteSeeing</a>
+                                <a class="text-xl block px-4 py-2 text-gray-700 hover:bg-gray-100" href="ProgramSchedule.html">Program Schedule</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="relative group">
+                        <a class="text-2xl text-gray-700 hover:text-gray-900 transition duration-300 font-bold" href="registation.html">Registration</a>
+                    </li>
+                    <li><a class="text-2xl text-gray-700 hover:text-gray-900 transition duration-300 font-bold" href="contacts.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="mobile-toggler md:hidden">
+                <div class="space-y-2" id="menu-toggle">
+                    <div class="w-8 h-1 bg-gray-700 transition transform duration-300"></div>
+                    <div class="w-8 h-1 bg-gray-700 transition transform duration-300"></div>
+                    <div class="w-8 h-1 bg-gray-700 transition transform duration-300"></div>
+                </div>
+            </div>
+        </div>
+        <div class="mobile-menu fixed inset-0 bg-black bg-opacity-50 w-full h-full hidden transform -translate-x-full transition-transform duration-300 ease-in-out z-50">
+            <div class="bg-white w-2/4 h-full p-6">
+                <div class="flex justify-end">
+                    <div id="menu-close" class="cursor-pointer">
+                        <svg class="w-10 h-10" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+                        </svg>
+                    </div>
+                </div>
+                <ul class="space-y-6 flex flex-col mt-2">
+                    <li><a class="text-xl text-gray-700 hover:text-gray-900 transition duration-300" href="index.html">Home</a></li>
+                    <li><a class="text-xl text-gray-700 hover:text-gray-900 transition duration-300" href="committee.html">Committee</a></li>
+                    <li><a class="text-xl text-gray-700 hover:text-gray-900 transition duration-300 font-bold" href="sponsors.html">Sponsors</a></li>
+                    <li class="relative group">
+                        <a class="text-2xl text-gray-700 hover:text-gray-900 transition duration-300 flex items-center" href="#">
+                            Author Guidelines
+                            <svg class="w-6 h-6 ml-1 text-gray-500 group-hover:text-gray-700 transition duration-300 dropdown-indicator" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                            </svg>
+                        </a>
+                        <div class="dropdown-content hidden group-hover:block absolute bg-white shadow-lg mt-1">
+                            <a class="text-lg block px-4 py-2 text-gray-700 hover:bg-gray-100" href="CallforPapers.html">Call For Papers</a>
+                            <a class="text-lg block px-4 py-2 text-gray-700 hover:bg-gray-100" href="Important Dates.html">Important Dates</a>
+                            <a class="text-lg block px-4 py-2 text-gray-700 hover:bg-gray-100" href="PaperSubmission.html">Paper-Submission</a>
+                            <a class="text-lg block px-4 py-2 text-gray-700 hover:bg-gray-100" href="Accomadation.html">Accommodation</a>
+                            <a class="text-lg block px-4 py-2 text-gray-700 hover:bg-gray-100" href="siteseeing.html">SiteSeeing</a>
+                            <a class="text-lg block px-4 py-2 text-gray-700 hover:bg-gray-100" href="ProgramSchedule.html">Program Schedule</a>
+                        </div>
+                    </li>
+                    <li><a class="text-xl text-gray-700 hover:text-gray-900 transition duration-300" href="registation.html">Registration</a></li>
+                    <li><a class="text-xl text-gray-700 hover:text-gray-900 transition duration-300" href="contacts.html">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+ <br><br><br>
+    <header>
+        <h1>Our Sponsors</h1>
+    </header>
+    <main>
+
+        <br><br><br>
+        <marquee behavior="fast-changing" direction="latest" class="text-4xl text-red-700"><b>NOTE : This website is currently in the process of adding data. </b></marquee>
+
+
+        <section class="sponsor" id="sponsor1">
+            <img src="assets/ieee.png" alt="Sponsor 1 Logo">
+            <h3>Description</h3>
+            <p class="text-justify"> IEEE has sponsored various programs<br>to honor achievements in education, industry, research, and service, celebrating distinguished colleagues, teachers, and corporate leaders who<br>have made a lasting impact on humanity, technology, and the profession.</p>
+            <a href="https://www.sponsor1.com" target="_blank">Visit Website</a>
+        </section>
+        <section class="sponsor" id="sponsor2">
+            <!-- <img src="assets/google.png" alt="Sponsor 2 Logo"> -->
+
+
+            <h1 class="font-bold text-3xl"> More Sponsers</h1>
+            <br>
+            <!-- <h3>Description</h3>
+            <p>Google LLC is an American multinational corporation and technology company focusing on online advertising, search engine technology, cloud computing, computer software, quantum computing, e-commerce, consumer electronics,and artificial intelligence.</p> -->
+            <!-- <a href="https://www.sponsor2.com" target="_blank">Visit Website</a> -->
+        </section>
+        <!-- <section class="sponsor" id="sponsor3">
+          <img src="assets/images.png" alt="Sponsor 2 Logo">
+          <h3>Description</h3>
+          <p>Amazon.com, Inc., doing business as Amazon, is an American multinational technology company, engaged in e-commerce, cloud computing, online advertising, digital streaming,software engineering,search engine technology and artificial intelligence.</p>
+          <a href="https://www.sponsor2.com" target="_blank">Visit Website</a>
+      </section> -->
+      <section class="sponsor-link regcontainer text-xl text-justify">
+        <h2 class="text-2xl text-blue-900 text-center">Call for Sponsors</h2>
+        <br>
+        <p class="text-xl text-center">Industrial and Institutional Sponsors are welcome to support SCOPES 2024 conference under the following categories:</p>
+        <br>
+    
+        <div class="sponsor-category">
+            <h2 class="text-xl text-blue-900">Platinum Sponsor: INR 5.0L </h2>
+            <ul>
+                <li>10 Complimentary delegate passes</li>
+                <li>40 minutes presentation slot</li>
+                <li>Acknowledgement during Awards & Valedictory Function</li>
+                <li>2 Complimentary exhibit booths at Prime Location</li>
+                <li>Prominent display of logo on all printed material, backdrop and website</li>
+                <li>Permission to keep the Company brochure in the registration Kit</li>
+            </ul>
+        </div>
+    
+        <div class="sponsor-category">
+            <h2 class="text-xl text-blue-900">Gold Sponsor: INR 3.0L </h2>
+            <ul>
+                <li>8 Complimentary delegate passes</li>
+                <li>30-minute presentation slot</li>
+                <li>Acknowledgement during Valedictory Function</li>
+                <li>Complimentary exhibit booth</li>
+                <li>Prominent display of logo on all printed material, backdrop and website</li>
+                <li>Permission to keep the Company brochure in the registration Kit</li>
+            </ul>
+        </div>
+    
+        <div class="sponsor-category">
+            <h2 class="text-xl text-blue-900">Silver Sponsor: INR 2.0L</h2>
+            <ul>
+                <li>5 Complimentary delegate passes</li>
+                <li>20 minutes presentation slot</li>
+                <li>Complimentary exhibit booth</li>
+                <li>Display of logo on all printed material, backdrop and website</li>
+                <li>Permission to keep the Company brochure in the registration Kit</li>
+            </ul>
+        </div>
+    
+        <div class="sponsor-category">
+            <h2 class="text-xl text-blue-900">Bronze Sponsor: INR 1.0L</h2>
+            <ul>
+                <li>2 Complimentary delegate passes</li>
+                <li>10 minutes pre-recorded video presentation slot in one of the breakaway sessions</li>
+                <li>Complimentary exhibit booth</li>
+                <li>Display of logo on all printed material, backdrop and website</li>
+            </ul>
+        </div>
+    
+        <br><br>
+        <p class="text-2xl text-blue-900 text-center">All interested sponsors, fill the Google form below or mail us at <a href="mailto:scopes24@cutm.ac.in" class="text-blue-600 underline">scopes24@cutm.ac.in</a></p>
+        <br>
+        <p class="text-xl text-center "> Link :  <a href="registerform.html" class="text-xl text-blue-500 text-center hover:underline">Call for Sponsor</a></p>
+    </section>
+    
+    </main>
+    <section>
+        <div id="footer-placeholder"></div>
+
+    </section>
+
+    <!-- Scripts -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="conn.js"></script>
+
+    <script>
+        // Load header and footer
+        $(document).ready(function () {
+            $("#header-placeholder").load("header.html");
+            $("#footer-placeholder").load("footer.html");
+        });
+
+    </script>
+
+</body>
+
+</html>

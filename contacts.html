@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="assets/LOGO_Updated.png" type="image/x-icon">
+    <title>IEEE Contact Page</title>
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css" />
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.css" />
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="contactstyle.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+
+</head>
+
+<body>
+    <section>
+        <nav class="z-50 bg-white shadow-lg fixed top-0 w-full">
+            <div class="container mx-auto flex justify-between items-center p-4">
+                <div class="nav-links hidden md:flex justify-center items-center">
+                    <ul class="flex space-x-4">
+                        <li><a class="text-2xl text-gray-700 hover:text-gray-900 transition duration-300 font-bold" href="index.html">Home</a></li>
+                        <li><a class="text-2xl text-gray-700 hover:text-gray-900 transition duration-300 font-bold" href="committee.html">Committee</a></li>
+                        <li><a class="text-2xl text-gray-700 hover:text-gray-900 transition duration-300 font-bold" href="sponsors.html">Sponsors</a></li>
+                        <li class="relative group">
+                            <div class="dropdown">
+                                <a class="text-2xl text-gray-700 hover:text-gray-900 transition duration-300 flex items-center font-bold" href="#">
+                                    Author Guidelines
+                                    <svg class="w-6 h-6 ml-1 text-gray-500 group-hover:text-gray-700 transition duration-300 dropdown-indicator" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                                    </svg>
+                                </a>
+                                <div class="dropdown-content hidden group-hover:block absolute bg-white shadow-lg mt-1">
+                                    <a class="text-xl block px-4 py-2 text-gray-700 hover:bg-gray-100" href="CallforPapers.html">Call For Papers</a>
+                                    <a class="text-xl block px-4 py-2 text-gray-700 hover:bg-gray-100" href="Important Dates.html">Important Dates</a>
+                                    <a class="text-xl block px-4 py-2 text-gray-700 hover:bg-gray-100" href="PaperSubmission.html">Paper-Submission</a>
+                                    <a class="text-xl block px-4 py-2 text-gray-700 hover:bg-gray-100" href="ProgramSchedule.html">Program Shedule</a>
+                                    <a class="text-xl block px-4 py-2 text-gray-700 hover:bg-gray-100" href="siteseeing.html">SiteSeeing</a>
+                                    <a class="text-xl block px-4 py-2 text-gray-700 hover:bg-gray-100" href="Accomadation.html">Accomodation</a>
+
+                                </div>
+                            </div>
+                        </li>
+                        <li class="relative group">
+                            <a class="text-2xl text-gray-700 hover:text-gray-900 transition duration-300 font-bold" href="registation.html">Registration</a>
+                        </li>
+                        <li><a class="text-2xl text-gray-700 hover:text-gray-900 transition duration-300 font-bold" href="contacts.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="mobile-toggler md:hidden">
+                    <div class="space-y-2" id="menu-toggle">
+                        <div class="w-8 h-1 bg-gray-700 transition transform duration-300"></div>
+                        <div class="w-8 h-1 bg-gray-700 transition transform duration-300"></div>
+                        <div class="w-8 h-1 bg-gray-700 transition transform duration-300"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="mobile-menu fixed inset-0 bg-black bg-opacity-50 w-full h-full hidden transform -translate-x-full transition-transform duration-300 ease-in-out z-50">
+                <div class="bg-white w-2/4 h-full p-6">
+                    <div class="flex justify-end">
+                        <div id="menu-close" class="cursor-pointer">
+                            <svg class="w-10 h-10" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+                            </svg>
+                        </div>
+                    </div>
+                    <ul class="space-y-6 flex flex-col mt-2">
+                        <li><a class="text-xl text-gray-700 hover:text-gray-900 transition duration-300 " href="index.html">Home</a></li>
+                        <li><a class="text-xl text-gray-700 hover:text-gray-900 transition duration-300 " href="committee.html">Committee</a></li>
+                        <li><a class="text-xl text-gray-700 hover:text-gray-900 transition duration-300 " href="sponsors.html">Sponsors</a></li>
+                        <li class="relative group">
+                            <a class="text-2xl text-gray-700 hover:text-gray-900 transition duration-300 flex items-center">
+                                Author Guidelines
+                                <svg class="w-6 h-6 ml-1 text-gray-500 group-hover:text-gray-700 transition duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                                </svg>
+                            </a>
+                            <div class="dropdown-content hidden group-hover:block absolute bg-white shadow-lg mt-1">
+                                <a class="text-lg block px-4 py-2 text-gray-700 hover:bg-gray-100" href="CallforPapers.html">Call For Papers</a>
+                                <a class="text-lg block px-4 py-2 text-gray-700 hover:bg-gray-100" href="Important Dates.html">Important Dates</a>
+                                <a class="text-lg block px-4 py-2 text-gray-700 hover:bg-gray-100" href="PaperSubmission.html">Paper-Submission</a>
+                                <a class="text-lg block px-4 py-2 text-gray-700 hover:bg-gray-100" href="ProgramSchedule.html">Program Shedule</a>
+                                <a class="text-lg block px-4 py-2 text-gray-700 hover:bg-gray-100" href="siteseeing.html">SiteSeeing</a>
+                                <a class="text-lg block px-4 py-2 text-gray-700 hover:bg-gray-100" href="Accomadation.html">Accomodation</a>
+
+                            </div>
+                        </li>
+                        <li><a class="text-xl text-gray-700 hover:text-gray-900 transition duration-300" href="registation.html">Registration</a></li>
+                        <li><a class="text-xl text-gray-700 hover:text-gray-900 transition duration-300 font-bold" href="contacts.html">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </section>
+
+    <section class="header mt-5">
+        <div class="text-box ">
+            <h1>Centurion University of Technology and Management</h1>
+            <p class="text-2xl font-bold ">Lifelong learning is an extension of classrooms, <br> books and theories. The DNA of Centurion is to offer
+                <br>ramps and ladders for multiple entry and exit by
+                <br>adopting and adapting National Credit Framework.</p>
+            <a href="https://cutm.ac.in/" class="hero-btn ">Knowing Culture of Education</a>
+        </div>
+    </section>
+
+    <div class="ffbox">
+        <div class="ffbox1 ">
+            <section class="course">
+                <h1>Contact Us</h1>
+                <p>IEEE Scopes 2024</p>
+                <div class="row">
+                    <div class="course-col">
+                        <h3 class="text-2xl">Organizing Chair</h3>
+                        <p class="text-2xl">Dr. Debendra Kumar Sahoo <br> +91 7008242454</p>
+                    </div>
+                    <div class="course-col">
+                        <h3 class="text-2xl">Convener</h3>
+                        <p class="text-2xl">Dr. Ashok Mishra <br> +91 9437123384</p>
+                    </div>
+                    <div class="course-col">
+                        <h3 class="text-2xl">Co - Convener</h3>
+                        <p class="text-2xl">Dr. Prabhat kumar Patnaik <br> +91 7008701920</p>
+                    </div>
+                </div>
+            </section>
+
+        </div>
+        <div class="map-div">
+            <div class="gmap_canvas">
+                <iframe width="100%" height="100%" id="gmap_canvas" src="https://maps.google.com/maps?q=Centurion+university+of+technology+and+management%2C+Parlakhemundi&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
+            </div>
+        </div>
+    </div>
+
+    <section>
+        <div id="footer-placeholder"></div>
+    </section>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            $("#header-placeholder").load("header.html");
+            $("#footer-placeholder").load("footer.html");
+        });
+    </script>
+
+    <script>
+        var navLinks = document.getElementById("navLinks");
+
+        function showMenu() {
+            navLinks.style.right = "0";
+        }
+
+        function hideMenu() {
+            navLinks.style.right = "-200px";
+        }
+    </script>
+</body>
+
+</html>

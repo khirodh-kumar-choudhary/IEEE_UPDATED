@@ -1,0 +1,110 @@
+/* Global Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Navigation Styles */
+.ccontainer nav {
+    background-color: #ffffff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+nav .ccontainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+}
+
+.ccontainer nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.ccontainer nav ul li {
+    display: inline-block;
+}
+
+.ccontainer nav ul li a {
+    color: #333333;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 0.5rem 1rem;
+}
+
+.ccontainer nav ul li a:hover {
+    color: #555555;
+}
+
+/* Header Styles */
+ header {
+    text-align: center;
+
+}
+
+header h1 {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: #071478;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    
+    font-size: 2rem;
+    color: #f7f3f3;
+}
+
+/* Form Styles */
+.ccontainer form {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.input-container {
+    margin-bottom: 1rem;
+}
+
+.input-container label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+}
+
+.input-container input,
+.input-container textarea {
+    width: 100%;
+    padding: 0.5rem;
+    border: 1px solid #cccccc;
+    border-radius: 4px;
+}
+
+.input-container button {
+    background-color: #007bff;
+    color: #ffffff;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.input-container button:hover {
+    background-color: #0056b3;
+}
+
+/* Footer Styles */
+.ccontainer  footer {
+    background-color: #f9f9f9;
+    padding: 2rem 0;
+    text-align: center;
+    color: #666666;
+}
+
+

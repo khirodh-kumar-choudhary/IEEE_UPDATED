@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Page</title>
+    <link rel="stylesheet" href="resterformstyle.css">
+    <link rel="icon" href="assets/LOGO_Updated.png" type="image/x-icon">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css" />
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.css" />
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+
+<body class="bg-gray-100">
+
+    <!-- Include header -->
+    <nav class="z-50 bg-white shadow-lg fixed top-0 w-full">
+        <div class="container mx-auto flex justify-between items-center p-4">
+            <div class="nav-links hidden md:flex justify-center items-center">
+                <ul class="flex space-x-4">
+                    <li><a class="text-2xl text-gray-700 hover:text-gray-900 transition duration-300 font-bold" href="index.html">Home</a></li>
+                    <li><a class="text-2xl text-gray-700 hover:text-gray-900 transition duration-300 font-bold" href="committee.html">Committee</a></li>
+                    <li><a class="text-2xl text-gray-700 hover:text-gray-900 transition duration-300 font-bold" href="sponsors.html">Sponsors</a></li>
+                    <li class="relative group">
+                        <div class="dropdown">
+                            <a class="text-2xl text-gray-700 hover:text-gray-900 transition duration-300 flex items-center font-bold" href="#">
+                                Author Guidelines
+                                <svg class="w-6 h-6 ml-1 text-gray-500 group-hover:text-gray-700 transition duration-300 dropdown-indicator" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                                </svg>
+                            </a>
+                            <div class="dropdown-content hidden group-hover:block absolute bg-white shadow-lg mt-1">
+                                <a class="text-xl block px-4 py-2 text-gray-700 hover:bg-gray-100" href="CallforPapers.html">Call For Papers</a>
+                                <a class="text-xl block px-4 py-2 text-gray-700 hover:bg-gray-100" href="Important Dates.html">Important Dates</a>
+                                <a class="text-xl block px-4 py-2 text-gray-700 hover:bg-gray-100" href="PaperSubmission.html">Paper-Submission</a>
+                                <a class="text-xl block px-4 py-2 text-gray-700 hover:bg-gray-100" href="ProgramSchedule.html">Program Schedule</a>
+                                <a class="text-xl block px-4 py-2 text-gray-700 hover:bg-gray-100" href="siteseeing.html">SiteSeeing</a>
+                                <a class="text-xl block px-4 py-2 text-gray-700 hover:bg-gray-100" href="Accomadation.html">Accommodation</a>
+
+                               
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <a class="text-2xl text-gray-700 hover:text-gray-900 transition duration-300 font-bold" href="registation.html">Registration</a>
+                    </li>
+                    <li><a class="text-2xl text-gray-700 hover:text-gray-900 transition duration-300 font-bold" href="contacts.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="mobile-toggler md:hidden">
+                <div class="space-y-2" id="menu-toggle">
+                    <div class="w-8 h-1 bg-gray-700 transition transform duration-300"></div>
+                    <div class="w-8 h-1 bg-gray-700 transition transform duration-300"></div>
+                    <div class="w-8 h-1 bg-gray-700 transition transform duration-300"></div>
+                </div>
+            </div>
+        </div>
+        <div class="mobile-menu fixed inset-0 bg-black bg-opacity-50 w-full h-full hidden transform -translate-x-full transition-transform duration-300 ease-in-out z-50">
+            <div class="bg-white w-2/4 h-full p-6">
+                <div class="flex justify-end">
+                    <div id="menu-close" class="cursor-pointer">
+                        <svg class="w-10 h-10" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+                        </svg>
+                    </div>
+                </div>
+                <ul class="space-y-6 flex flex-col mt-2">
+                    <li><a class="text-xl text-gray-700 hover:text-gray-900 transition duration-300" href="index.html">Home</a></li>
+                    <li><a class="text-xl text-gray-700 hover:text-gray-900 transition duration-300" href="committee.html">Committee</a></li>
+                    <li><a class="text-xl text-gray-700 hover:text-gray-900 transition duration-300" href="sponsors.html">Sponsors</a></li>
+                    <li class="relative group">
+                        <a class="text-2xl text-gray-700 hover:text-gray-900 transition duration-300 flex items-center " href="#">
+                            Author Guidelines
+                            <svg class="w-6 h-6 ml-1 text-gray-500 group-hover:text-gray-700 transition duration-300 dropdown-indicator" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                            </svg>
+                        </a>
+                        <div class="dropdown-content hidden group-hover:block absolute bg-white shadow-lg mt-1">
+                            <a class="text-lg block px-4 py-2 text-gray-700 hover:bg-gray-100" href="CallforPapers.html">Call For Papers</a>
+                            <a class="text-lg block px-4 py-2 text-gray-700 hover:bg-gray-100" href="Important Dates.html">Important Dates</a>
+                            <a class="text-lg block px-4 py-2 text-gray-700 hover:bg-gray-100" href="PaperSubmission.html">Paper-Submission</a>
+                            <a class="text-lg block px-4 py-2 text-gray-700 hover:bg-gray-100" href="ProgramSchedule.html">Program Schedule</a>
+                            <a class="text-lg block px-4 py-2 text-gray-700 hover:bg-gray-100" href="siteseeing.html">SiteSeeing</a>
+                            <a class="text-lg block px-4 py-2 text-gray-700 hover:bg-gray-100" href="Accomadation.html">Accommodation</a>
+                          
+                           
+                        </div>
+                    </li>
+                    <li><a class="text-xl text-gray-700 hover:text-gray-900 transition duration-300" href="registration.html">Registration</a></li>
+                    <li><a class="text-xl text-gray-700 hover:text-gray-900 transition duration-300" href="contacts.html">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+
+
+
+
+
+<br><br>  <br><br><br>
+
+<main>
+
+
+    <header1>
+        <h1 class="text-4xl font-manrope font-semibold text-center text-red-700">Early Bird Registration starts from 20<sup>th</sup>  September 2024 , Stay Tuned !!</h1>
+    </header1>
+
+  
+      
+        <!-- <div class="ccontent">
+            
+            <div class="ccontainer">
+            <form method="post" action="https://script.google.com/a/macros/cutm.ac.in/s/AKfycbwvjCVUk5G2rWbbTNJrYlOOIEXlTXkS7JIa-DHrR-6zkriXhJN6FVRIPSFZaFlg-czAmQ/exec" enctype="multipart/form-data"> 
+              
+                <div class="input-container">
+                    <label for="paper_id">PAPER ID:</label>
+                    <input type="text" id="paper_id" name="paper_id" required>
+                </div>
+
+                <div class="input-container">
+                    <label for="paper_title">Paper Title:</label>
+                    <input type="text" id="paper_title" name="paper_title" required>
+                </div>
+
+                <div class="input-container">
+                    <label for="track_name">Track Name:</label>
+                    <select id="track_name" name="track_name" required>
+                        <option value="" disabled selected>Select Track</option>
+                        <option value="Track 1">Track-1: Signal Processing</option>
+                        <option value="Track 2">Track-2: Communication Systems</option>
+                        <option value="Track 3">Track-3: Natural Language Processing</option>
+                        <option value="Track 4">Track-4: Embedded System</option>
+                        <option value="Track 5">Track-5: Power Systems</option>
+                        <option value="Track 6">Track-6: Power Electronics and Applications</option>
+                        <option value="Track 7">Track-7: Data Science</option>
+                        <option value="Track 8">Track-8: Advanced Mechanical Systems</option>
+                        <option value="Track 9">Track-9: Advanced Agricultural Engineering</option>
+                        <option value="Track 10">Track-10: Phyto Pharmaceutical Developments</option>
+                        <option value="Track 11">Track-11: Dairy Technology</option>
+                        <option value="Track 12">Track-12: Leadership & Management</option>
+                   
+                    </select>
+                </div>
+<br>
+
+                <div class="input-container">
+                    <label for="presenting_author_name">Name of the Presenting Author:</label>
+                    <input type="text" id="presenting_author_name" name="presenting_author_name" required>
+                </div>
+
+                <div class="input-container">
+                    <label for="corresponding_author_name">Corresponding Author Name:</label>
+                    <input type="text" id="corresponding_author_name" name="corresponding_author_name" required>
+                </div>
+
+                <div class="input-container">
+                    <label for="corresponding_author_email">Corresponding Author Email ID:</label>
+                    <input type="email" id="corresponding_author_email" name="corresponding_author_email" required>
+                </div>
+
+                <div class="input-container">
+                    <label for="presenting_author_email">Email ID of Presenting Author:</label>
+                    <input type="email" id="presenting_author_email" name="presenting_author_email" required>
+                </div>
+
+                <div class="input-container">
+                    <label for="presenting_author_affiliation">Affiliation of Presenting Author:</label>
+                    <input type="text" id="presenting_author_affiliation" name="presenting_author_affiliation" required>
+                </div>
+
+                <div class="input-container">
+                    <label for="contact_number">Contact Number (Country Code):</label>
+                    <input type="text" id="contact_number" name="contact_number" required>
+                </div>
+
+                <div class="input-container">
+                    <label>Category of Registration:</label><br>
+                    <div class="radio-group" >
+                        <label><input type="radio" name="category_registration" value="attendee_ieee" required> Attendee (IEEE Membership)</label>
+                        <label><input type="radio" name="category_registration" value="ug_pg_ieee" required> UG/PG Scholars (IEEE Membership)</label>
+                        <label><input type="radio" name="category_registration" value="research_ieee" required> Research Scholars (IEEE Membership)</label>
+                        <label><input type="radio" name="category_registration" value="academicians_ieee" required> Academicians (IEEE Membership)</label>
+                        <label><input type="radio" name="category_registration" value="industry_ieee" required> Industry (IEEE Membership)</label>
+                        <label><input type="radio" name="category_registration" value="attendee_non_ieee" required> Attendee (Non-IEEE Membership)</label>
+                        <label><input type="radio" name="category_registration" value="ug_pg_non_ieee" required> UG/PG Scholars (Non-IEEE Membership)</label>
+                        <label><input type="radio" name="category_registration" value="research_non_ieee" required> Research Scholars (Non-IEEE Membership)</label>
+                        <label><input type="radio" name="category_registration" value="academicians_non_ieee" required> Academicians (Non-IEEE Membership)</label>
+                        <label><input type="radio" name="category_registration" value="industry_non_ieee" required> Industry (Non-IEEE Membership)</label>
+                    </div>
+                </div>
+
+                <div class="input-container">
+                    <label for="attached_proof">Attached Proof of Category:</label>
+                    <input type="file" id="attached_proof" name="attached_proof" required>
+                </div>
+
+                <div class="input-container">
+                    <label>How will you attend the conference:</label><br>
+                    <div class="radio-group">
+                        <label><input type="radio" name="attendance_mode" value="online" required> Online</label>
+                        <label><input type="radio" name="attendance_mode" value="offline" required> Offline</label>
+                    </div>
+                </div>
+
+                <div class="input-container">
+                    <label>Payment Details:</label><br>
+                    <div class="radio-group">
+                        <label><input type="radio" name="payment_details" value="inr_12000" required> INR 12,000/- (International participant Non-IEEE Member)</label>
+                        <label><input type="radio" name="payment_details" value="inr_8000" required> INR 8000/- (Participant from Industry and R&D Institute IEEE Member)</label>
+                        <label><input type="radio" name="payment_details" value="inr_9000" required> INR 9000/- (Participant from Industry and R&D Institute Non-IEEE Member)</label>
+                        <label><input type="radio" name="payment_details" value="inr_6500" required> INR 6500/- (Faculty Member from Academic IEEE Member)</label>
+                        <label><input type="radio" name="payment_details" value="inr_7500" required> INR 7500/- (Faculty Member from Academic Non-IEEE Member)</label>
+                        <label><input type="radio" name="payment_details" value="inr_5000" required> INR 5000/- (Research Scholar/UG/PG Students IEEE Member)</label>
+                        <label><input type="radio" name="payment_details" value="inr_6000" required> INR 6000/- (Research Scholar/UG/PG Students Non-IEEE Member)</label>
+                        <label><input type="radio" name="payment_details" value="inr_2000" required> INR 2000/- (Listener IEEE Member)</label>
+                        <label><input type="radio" name="payment_details" value="inr_2500" required> INR 2500/- (Listener Non-IEEE Member)</label>
+                    </div>
+
+<br>
+                    <div class="input-container">
+                        <label>Click on pay now Button for payment :</label><br>
+                    <button id="payNowBtn" type="button" class="pay-now-btn text-lg font-semibold">Pay Now</button>
+                </div>
+                <br>
+                </div>
+
+                <div class="input-container">
+                    <label for="transaction_number">Transaction Number (UTR No.):</label>
+                    <input type="text" id="transaction_number" name="transaction_number" required>
+                </div>
+
+                <div class="input-container">
+                    <label for="transaction_receipt">Transaction Receipt (attach file):</label>
+                    <input type="file" id="transaction_receipt" name="transaction_receipt" required>
+                </div>
+
+              
+                 <button type="submit" id="nextBtn" class="btn btn-primary btn-lg bg-blue-900 text-white py-2 px-40 rounded font-semibold text-lg">Submit</button> 
+
+
+           
+            
+
+                
+            
+            
+            </form>
+
+        </div>
+    </div> -->
+ 
+    
+</main>
+ <script>
+    const scriptURL = 'https://script.google.com/a/macros/cutm.ac.in/s/AKfycbwvjCVUk5G2rWbbTNJrYlOOIEXlTXkS7JIa-DHrR-6zkriXhJN6FVRIPSFZaFlg-czAmQ/exec'
+
+const form = document.forms['registerform']
+
+form.addEventListener('submit', e => {
+e.preventDefault()
+fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+.then(response => alert("Thank you! your form is submitted successfully." ))
+.then(() => { window.location.reload(); })
+.catch(error => console.error('Error!', error.message))
+})
+     </script> 
+     <script>
+         document.getElementById("payNowBtn").addEventListener("click", function() {
+           window.location.href = "https://rzp.io/l/conference-regfee";
+         });
+
+
+
+       
+        document.getElementById('nextButton').addEventListener('click', function () {
+            // Store form data in session storage
+            const formData = new FormData(document.getElementById('registerForm'));
+            for (const [key, value] of formData.entries()) {
+                sessionStorage.setItem(key, value);
+            }
+            // Redirect to the next form
+            window.location.href = 'addauthor.html';
+        });
+  
+       </script>
+
+
+
+
+
+        <!-- Include footer -->
+        <div id="footer-placeholder"></div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="conn.js"></script>
+
+    <script>
+        // Load header and footer
+        $(document).ready(function() {
+            $("#header-placeholder").load("header.html");
+            $("#footer-placeholder").load("footer.html");
+        });
+    </script>
+
+</body>
+
+</html>

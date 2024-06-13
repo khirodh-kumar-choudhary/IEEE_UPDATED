@@ -1,0 +1,252 @@
+* {
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    font-family: 'Poppins', sans-serif;
+    overflow-x: hidden;
+}
+
+
+.floating-text {
+    position: absolute;
+    top: 200px;
+    left: 300px; 
+    background-color: #f8f9fa; 
+    padding: 2px; 
+    z-index: 100; 
+    border: 2px solid #1e1718; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 0px;
+}
+
+
+/* For mobile */
+@media (max-width: 767px) {
+    .iee-logo {
+        display: block;
+        margin: 0 auto;
+        text-align: center;
+        padding: 10px; /* Adjust padding as needed */
+    }
+    .iee-logo img {
+        height: 64px; /* Adjust height for mobile */
+        width: auto;
+    }
+    .iee-logo h2 {
+        font-size: 16px; /* Adjust font size for mobile */
+        margin-top: 5px; /* Adjust margin as needed */
+    }
+}
+
+/* For tablet */
+@media (min-width: 768px) and (max-width: 1023px) {
+    .iee-logo {
+        display: block;
+        margin: 0 auto;
+        text-align: center;
+        padding: 10px; /* Adjust padding as needed */
+    }
+    .iee-logo img {
+        height: 80px; /* Adjust height for tablet */
+        width: auto;
+    }
+    .iee-logo h2 {
+        font-size: 18px; /* Adjust font size for tablet */
+        margin-top: 5px; /* Adjust margin as needed */
+    }
+}
+
+
+
+
+
+
+
+.cutm-logo img {
+    height: 190px;
+    width: 130px;
+}
+
+.slider img,
+.about-image img,
+.speakers-slides img,
+.sponsor-logos img {
+    width: 100%;
+    display: block;
+}
+
+.mobile-toggler .fa-bars,
+.mobile-toggler .fa-x {
+    display: none;
+}
+
+@media (max-width: 767px) {
+    .mobile-toggler .fa-bars {
+        display: block;
+    }
+    .nav-links {
+        display: none;
+    }
+}
+
+.carousel-image {
+    height: 20rem;
+    /* Fixed height for all carousel images */
+    display: block;
+    margin: 0;
+    /* Removes any default margin */
+    width: 100%;
+    padding: 0;
+    /* Ensure no padding */
+}
+
+.slider-container {
+    position: relative;
+    overflow: hidden;
+    max-width: 100%;
+    margin-top: 0;
+    padding-top: 0;
+    padding: 0;
+}
+
+.slides {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.slide {
+    min-width: 100%;
+    box-sizing: border-box;
+    margin: 0;
+    /* Ensures no margin around each slide */
+    padding: 0;
+    /* Ensures no padding around each slide */
+}
+
+.static-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 10;
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.speakers {
+    background-color: #ffffff;
+    /* padding-top: 6rem; */
+    padding-bottom: 6rem;
+    margin-top: 0;
+}
+
+.speaker img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 5px solid #ffffff;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.5s ease-in-out;
+}
+
+.speaker img:hover {
+    transform: scale(1.1);
+}
+
+.slick-slide img {
+    display: block;
+    margin: 0 auto;
+    width: auto;
+    height: 100px;
+}
+
+ul.flex li {
+    position: relative;
+}
+
+ul.flex li a::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -2px;
+    width: 0%;
+    height: 2px;
+    background-color: #3182ce;
+    /* Change to your desired color */
+    transition: width 0.3s ease;
+}
+
+ul.flex li a:hover::after {
+    width: 100%;
+}
+
+.lighten-img {
+    opacity: 0.8;
+    /* Adjust this value to change the opacity */
+}
+
+.bold {
+    font-weight: 800;
+    /* Bold */
+}
+
+
+/* Nav Dropdown */
+
+.dropdown {
+    float: left;
+    overflow: hidden;
+}
+
+.dropdown .dropbtn {
+    font-size: 16px;
+    border: none;
+    outline: none;
+    color: white;
+    padding: 14px 20px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+    display: flex;
+    align-items: center;
+}
+
+.dropdown .dropbtn .caret {
+    margin-left: 8px;
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 3px;
+    transform: rotate(45deg);
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown-content a:hover {
+    background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}

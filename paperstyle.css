@@ -1,0 +1,88 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+.slider img,
+.mobile-toggler .fa-bars,
+.mobile-toggler .fa-x {
+    display: none;
+}
+
+@media (max-width: 767px) {
+    .mobile-toggler .fa-bars {
+        display: block;
+    }
+}
+
+.slider-container {
+    position: relative;
+    overflow: hidden;
+    max-width: 100%;
+}
+
+.slides {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.slide {
+    flex: 1 1 100%;
+    box-sizing: border-box;
+    position: relative;
+}
+
+.static-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 10;
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 100%; /* Adjust width as needed */
+    text-align: center;
+}
+
+.slide img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+@media (min-width: 768px) {
+    .slide {
+        flex: 1 1 33.33%;
+    }
+}
+
+.lighten-img {
+    filter: brightness(0.8);
+}
+
+.btn {
+    display: inline-block;
+    text-align: center;
+    cursor: pointer;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.py-10 {
+    padding-top: 2.5rem;
+    padding-bottom: 2.5rem;
+}
+
+.mt-5 {
+    margin-top: 1.25rem;
+}

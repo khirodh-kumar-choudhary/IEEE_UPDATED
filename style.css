@@ -11,17 +11,7 @@ body {
 }
 
 
-.floating-text {
-    position: absolute;
-    top: 200px;
-    left: 300px; 
-    background-color: #f8f9fa; 
-    padding: 2px; 
-    z-index: 100; 
-    border: 2px solid #1e1718; 
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    border-radius: 0px;
-}
+
 
 
 /* For mobile */
@@ -59,8 +49,6 @@ body {
         margin-top: 5px; /* Adjust margin as needed */
     }
 }
-
-
 
 
 

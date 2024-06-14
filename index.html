@@ -14,36 +14,8 @@
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <link rel="stylesheet" href="style.css">
-    <!-- <style>
-        .floating-text {
-            position: absolute;
-            top: 20px;
-            left: 20px; 
-            background-color: #f8f9fa; 
-            padding: 20px; 
-            z-index: 1000; 
-            border: 2px solid #dc3545; 
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-            border-radius: 10px;
-        }
-        h5.text-lg {
-            font-size: 1.25rem;
-        }
-        h5.md\:text-lg {
-            font-size: 1.25rem;
-        }
-        h5.font-bold {
-            font-weight: bold;
-        }
-        h5.text-red-800 {
-            color: #dc3545;
-        }
-        h5 mark {
-            background-color: #ffeb3b;
-            padding: 2px 4px; 
-            border-radius: 3px;
-        }
-    </style> -->
+
+  
 </head>
 
 <body class="bg-gray-100">
@@ -79,6 +51,7 @@
     <nav class="sticky top-0 z-50 bg-white shadow-lg">
         <div class="container md:mr-10 mx-auto flex justify-between items-center p-4">
             <div class="nav-links hidden md:flex justify-center items-center ">
+                
                 <ul class="flex space-x-6">
                     <li><a class="text-2xl text-gray-700 hover:text-gray-900 transition duration-300 fw-semibold" href="index.html">Home</a></li>
                     <li><a class="text-2xl text-gray-700 hover:text-gray-900 transition duration-300 fw-semibold" href="committee.html">Committee</a></li>
@@ -233,10 +206,11 @@
                         <img src="assets/Speakers/Dr-Naeem-M_S_-Hanoon.webp" alt="Speaker 1" class="h-48 w-48 object-cover rounded-full mx-auto mb-4 cursor-pointer" data-modal="modal-1" />
                         <h3 class="text-xl font-semibold ">Prof. Naeem Mannoon </h3>
                         <p class="text-gray-600">University Of Teknologi MARA, Sheh Aalm, Malaysia</p>
+                        <button id="naeem" type="button" class="btn btn-primary btn-lg bg-blue-900 text-white py-0 px-2 rounded">See More</button>
                     </div>
                     <div id="modal-1" class="modal hidden absolute bg-white p-4 rounded shadow-lg bottom-0 left-1/2 transform -translate-x-1/2 mt-12 z-20">
-                        <h3 class="text-lg font-semibold">Prof. Naeem Mannoon</h3>
-                        <p class="text-gray-600">University Of Teknologi MARA, Sheh Aalm</p>
+                        <h3 class="text-lg font-semibold"><b>Topic for keynote:</b></h3>
+                        <p class="text-gray-600 h-24 w-100%">Advanced Automation of Substations-lates trends</p>
                     </div>
                 </div>
                 <div class="carousel-item flex-shrink-0 w-full sm:w-1/3 flex justify-center relative">
@@ -244,6 +218,7 @@
                         <img src="assets/Speakers/AMIT MISHRA.jpg" alt="Speaker 2" class="h-48 w-48 object-cover rounded-full mx-auto mb-4 cursor-pointer" data-modal="modal-2" />
                         <h3 class="text-xl font-semibold">Prof. Amit Mishra, </h3>
                         <p class="text-gray-600">Aberydtengyth University, Sweden</p>
+                        <button id="naeem" type="button" class="btn btn-primary btn-lg bg-blue-900 text-white py-0 px-2 rounded">See More</button>
                     </div>
                     <div id="modal-2" class="modal hidden absolute bg-white p-4 rounded shadow-lg bottom-0 left-1/2 transform -translate-x-1/2 mt-12 z-20">
                         <h3 class="text-lg font-semibold">Prof. Amit Mishra</h3>
@@ -255,6 +230,7 @@
                         <img src="assets/Speakers/Banshi Majhi.jpg" alt="Speaker 3" class="h-48 w-48 object-cover rounded-full mx-auto mb-4 cursor-pointer" data-modal="modal-3" />
                         <h3 class="text-xl font-semibold">Bansidhar Majhi</h3>
                         <p class="text-gray-600">VC, VSSUT, Burla</p>
+                        <button id="naeem" type="button" class="btn btn-primary btn-lg bg-blue-900 text-white py-0 px-2 rounded">See More</button>
                     </div>
                     <div id="modal-3" class="modal hidden absolute bg-white p-4 rounded shadow-lg bottom-0 left-1/2 transform -translate-x-1/2 mt-12 z-20">
                         <h3 class="text-lg font-semibold">Bansidhar Majhi</h3>
@@ -266,26 +242,14 @@
                         <img src="./assets/ieee_tapan.png" alt="Speaker 4" class="h-48 w-48 object-cover rounded-full mx-auto mb-4 cursor-pointer" data-modal="modal-4" />
                         <h3 class="text-xl font-semibold">Tapan K. Gandhi</h3>
                         <p class="text-gray-600">IIT, Delhi</p>
+                        <button id="naeem" type="button" class="btn btn-primary btn-lg bg-blue-900 text-white py-0 px-2 rounded">See More</button>
                     </div>
                     <div id="modal-4" class="modal hidden absolute bg-white p-4 rounded shadow-lg bottom-0 left-1/2 transform -translate-x-1/2 mt-12 z-20">
                         <h3 class="text-lg font-semibold">Tapan K. Gandhi</h3>
                         <p class="text-gray-600">IIT, Delhi</p>
                     </div>
                 </div>
-                <div class="carousel-item flex-shrink-0 w-full sm:w-1/3 flex justify-center relative">
-                    <div class="text-center">
-                        <img src="https://images.unsplash.com/photo-1568316674077-d72ee56de61c?q=80&w=1964&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Speaker 5" class="h-48 w-48 object-cover rounded-full mx-auto mb-4 cursor-pointer"
-                            data-modal="modal-5" />
-                        <h3 class="text-xl font-semibold">NB Puhana</h3>
-                        <p class="text-gray-600">IIT Bhubaneswar</p>
-                    </div>
-                    <div id="modal-5" class="modal hidden absolute bg-white p-4 rounded shadow-lg bottom-0 left-1/2 transform -translate-x-1/2 mt-12 z-20">
-                        <h3 class="text-lg font-semibold">Speaker 5</h3>
-                        <p class="text-gray-600">Detailed information about Speaker 5.</p>
-                    </div>
-                </div>
-                <!-- Add more carousel items as needed -->
-            </div>
+              
             <button id="carousel-left" class="absolute left-0 top-1/2 transform -translate-y-1/2 bg-blue-500 text-white p-2 rounded-full hover:bg-blue-700 transition duration-300 ease-in-out shadow-lg hover:shadow-xl focus:outline-none z-10">
               <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path>
@@ -634,6 +598,10 @@
     <script>
         document.getElementById("registerBtn").addEventListener("click", function() {
             window.location.href = "registerform.html";
+        });
+
+        document.getElementById("naeem").addEventListener("click", function() {
+            window.location.href = "speakers.html";
         });
     </script>
 

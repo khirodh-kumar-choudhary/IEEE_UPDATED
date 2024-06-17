@@ -1,35 +1,67 @@
-const menuToggle = document.getElementById('menu-toggle');
-const mobileMenu = document.querySelector('.mobile-menu');
-const menuClose = document.getElementById('menu-close');
-let menuOpen = false;
+// const menuToggle = document.getElementById('menu-toggle');
+// const mobileMenu = document.querySelector('.mobile-menu');
+// const menuClose = document.getElementById('menu-close');
+// let menuOpen = false;
 
-menuToggle.addEventListener('click', () => {
-    if (!menuOpen) {
+// menuToggle.addEventListener('click', () => {
+//     if (!menuOpen) {
+//         mobileMenu.classList.remove('hidden');
+//         setTimeout(() => {
+//             mobileMenu.classList.remove('-translate-x-full');
+//         }, 10);
+//         menuToggle.children[0].classList.add('transform', 'rotate-45', 'translate-y-2.5');
+//         menuToggle.children[1].classList.add('opacity-0');
+//         menuToggle.children[2].classList.add('transform', '-rotate-45', '-translate-y-2.5');
+//         menuOpen = true;
+//     } else {
+//         closeMenu();
+//     }
+// });
+document.addEventListener('DOMContentLoaded', function() {
+    const mobileMenu = document.getElementById('mobile-menu');
+    const menuContent = document.getElementById('menu-content');
+    const menuClose = document.getElementById('menu-close');
+    const menuToggle = document.getElementById('menu-toggle'); // Assuming you have a button with this ID to open the menu
+
+    menuToggle.addEventListener('click', function() {
+        mobileMenu.classList.remove('-translate-x-full');
         mobileMenu.classList.remove('hidden');
-        setTimeout(() => {
-            mobileMenu.classList.remove('-translate-x-full');
-        }, 10);
-        menuToggle.children[0].classList.add('transform', 'rotate-45', 'translate-y-2.5');
-        menuToggle.children[1].classList.add('opacity-0');
-        menuToggle.children[2].classList.add('transform', '-rotate-45', '-translate-y-2.5');
-        menuOpen = true;
-    } else {
+    });
+
+    menuClose.addEventListener('click', function() {
         closeMenu();
+    });
+
+    document.addEventListener('click', function(event) {
+        if (!menuContent.contains(event.target) && !menuToggle.contains(event.target)) {
+            closeMenu();
+        }
+    });
+
+    function closeMenu() {
+        mobileMenu.classList.add('-translate-x-full');
+        setTimeout(() => {
+            mobileMenu.classList.add('hidden');
+        }, 300); // Match the duration of your transition
     }
 });
+
+
+
+
 
 const countDownDate = new Date("December 19, 2024 15:37:25").getTime();
 
 // Update the countdown every 1 second
 const x = setInterval(function() {
 
-    
+
     const now = new Date().getTime();
 
- 
+
     const distance = countDownDate - now;
 
-    
+
     const days = Math.floor(distance / (1000 * 60 * 60 * 24));
     const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
     const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
@@ -50,11 +82,11 @@ const x = setInterval(function() {
 
 
 $(document).ready(function() {
-   
+
     $("#header-placeholder").load("header.html");
     $("#footer-placeholder").load("footer.html");
 
- 
+
     $(document).on('click', '#menu-open', function() {
         $('.mobile-menu').addClass('open');
     });
@@ -210,14 +242,14 @@ modals.forEach(img => {
 
 // Read more functionality 
 
-    document.getElementById('read-more').addEventListener('click', function() {
-        var moreText = document.getElementById('more-text');
-        var button = this;
-        if (moreText.style.display === 'none') {
-            moreText.style.display = 'block';
-            button.textContent = 'Read Less';
-        } else {
-            moreText.style.display = 'none';
-            button.textContent = 'Read More';
-        }
-    });
+document.getElementById('read-more').addEventListener('click', function() {
+    var moreText = document.getElementById('more-text');
+    var button = this;
+    if (moreText.style.display === 'none') {
+        moreText.style.display = 'block';
+        button.textContent = 'Read Less';
+    } else {
+        moreText.style.display = 'none';
+        button.textContent = 'Read More';
+    }
+});

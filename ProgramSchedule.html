@@ -211,7 +211,18 @@
                 <ul class="flex space-x-4">
                     <li><a class="text-2xl text-gray-700 hover:text-gray-900 transition duration-300 font-bold" href="index.html">Home</a></li>
                     <li><a class="text-2xl text-gray-700 hover:text-gray-900 transition duration-300 font-bold" href="committee.html">Committee</a></li>
-                    <li><a class="text-2xl text-gray-700 hover:text-gray-900 transition duration-300 font-bold" href="sponsors.html">Sponsors</a></li>
+                    <li class="dropdown">
+                        <a class="text-2xl text-gray-700 hover:text-gray-900 transition duration-300 flex items-center font-bold" href="#">
+                         Sponsor
+                            <svg class="w-6 h-6 ml-1 text-gray-500 group-hover:text-gray-700 transition duration-300 dropdown-indicator" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                            </svg>
+                        </a>
+                        <div class="dropdown-content">
+                            <a class="text-lg block px-4 py-2 text-gray-700 hover:bg-gray-100 " href="sponsors.html">Sponsors</a>
+                            <a class="text-lg block px-4 py-2 text-gray-700 hover:bg-gray-100 " href="callforsponsors.html">Call for Sponsors</a>
+                        </div>
+                    </li>
                     <li class="dropdown">
                         <a class="text-2xl text-gray-700 hover:text-gray-900 transition duration-300 flex items-center font-bold" href="#">
                             Author Guidelines
@@ -224,7 +235,7 @@
                             <a class="text-xl block px-4 py-2 text-gray-700 hover:bg-gray-100" href="Important Dates.html">Important Dates</a>
                             <a class="text-xl block px-4 py-2 text-gray-700 hover:bg-gray-100" href="PaperSubmission.html">Paper-Submission</a>
                             <a class="text-xl block px-4 py-2 text-gray-700 hover:bg-gray-100" href="ProgramSchedule.html">Program Shedule</a>
-                            <a class="text-xl block px-4 py-2 text-gray-700 hover:bg-gray-100" href="siteseeing.html">SiteSeeing</a>
+                            <a class="text-xl block px-4 py-2 text-gray-700 hover:bg-gray-100" href="siteseeing.html">Places to Visit</a>
                             <a class="text-xl block px-4 py-2 text-gray-700 hover:bg-gray-100" href="Accomadation.html">Accomodation</a>
                           
                         </div>
@@ -253,7 +264,18 @@
                 <ul class="space-y-6 flex flex-col mt-2">
                     <li><a class="text-xl text-gray-700 hover:text-gray-900 transition duration-300" href="index.html">Home</a></li>
                     <li><a class="text-xl text-gray-700 hover:text-gray-900 transition duration-300" href="committee.html">Committee</a></li>
-                    <li><a class="text-xl text-gray-700 hover:text-gray-900 transition duration-300" href="sponsors.html">Sponsors</a></li>
+                    <li class="relative group">
+                        <a class="text-2xl text-gray-700 hover:text-gray-900 transition duration-300 flex items-center " href="#">
+                          Sponsor
+                            <svg class="w-6 h-6 ml-1 text-gray-500 group-hover:text-gray-700 transition duration-300 dropdown-indicator" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                            </svg>
+                        </a>
+                        <div class="dropdown-content hidden group-hover:block absolute bg-white shadow-lg mt-1">
+                            <a class="text-lg block px-4 py-2 text-gray-700 hover:bg-gray-100 " href="sponsors.html">Sponsors</a>
+                            <a class="text-lg block px-4 py-2 text-gray-700 hover:bg-gray-100 " href="callforsponsors.html">Call for Sponsors</a>
+                        </div>
+                    </li>
                     <li class="relative group">
                         <a class="text-2xl text-gray-700 hover:text-gray-900 transition duration-300 flex items-center font-bold">
                             Author Guidelines
@@ -266,7 +288,7 @@
                             <a class="text-lg block px-4 py-2 text-gray-700 hover:bg-gray-100" href="Important Dates.html">Important Dates</a>
                             <a class="text-lg block px-4 py-2 text-gray-700 hover:bg-gray-100" href="PaperSubmission.html">Paper-Submission</a>
                             <a class="text-lg block px-4 py-2 text-gray-700 hover:bg-gray-100 font-bold" href="ProgramSchedule.html">Program Shedule</a>
-                            <a class="text-lg block px-4 py-2 text-gray-700 hover:bg-gray-100" href="siteseeing.html">SiteSeeing</a>
+                            <a class="text-lg block px-4 py-2 text-gray-700 hover:bg-gray-100" href="siteseeing.html">Places to Visit</a>
                             <a class="text-lg block px-4 py-2 text-gray-700 hover:bg-gray-100" href="Accomadation.html">Accomodation</a>
                           
                         </div>
@@ -279,13 +301,16 @@
     </nav>
  <br><br><br>
  
-            <h2 class="text-2xl font-bold text-red-800 text-center" >The below data is demonstration purpose , The real data will be updated shortly</h2>
+          
 
     <div class="container">
         <div class="schedule">
             <h2 class="text-4xl font-bold" >Program Schedule</h2>
             <br>
-            <div class="day">
+
+            <h6 class="text-2xl font-bold text-red-800 text-center" >The data will be updated shortly...</h6>
+
+            <!-- <div class="day">
                 <h3>Day 1</h3>
                 <table>
                     <tr>
@@ -319,9 +344,9 @@
                         <td>Conference Room B</td>
                     </tr>
                 </table>
-            </div>
+            </div> -->
 
-            <div class="day">
+            <!-- <div class="day">
                 <h3>Day 2</h3>
                 <table>
                     <tr>
@@ -355,9 +380,9 @@
                         <td>Conference Room A</td>
                     </tr>
                 </table>
-            </div>
+            </div> -->
 
-            <div class="day">
+            <!-- <div class="day">
                 <h3>Day 3</h3>
                 <table>
                     <tr>
@@ -391,14 +416,14 @@
                         <td>Main Hall</td>
                     </tr>
                 </table>
-            </div>
+            </div> -->
         </div>
 
         <div class="pdf-viewer">
             <h2>Shedule Details</h2>
-            <iframe src="assets/IEEE Invitation.pdf"></iframe>
+            <iframe src="assets/invitation.pdf"></iframe>
             <div class="pdf-download">
-                <a href="assets/IEEE Invitation.pdf" download>Download PDF</a>
+                <a href="assets/invitation.pdf" download>Download PDF</a>
             </div>
         </div>
     </div>

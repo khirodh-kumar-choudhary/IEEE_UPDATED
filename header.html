@@ -15,20 +15,17 @@
         .mobile-toggler .fa-x {
             display: none;
         }
-
+        
         @media (max-width: 767px) {
             .mobile-toggler .fa-bars {
                 display: block;
             }
-
             .nav-links {
                 display: none;
             }
-
             .mobile-menu.open {
                 transform: translateX(0);
             }
-
             .mobile-menu {
                 transition: transform 0.3s ease-in-out;
                 transform: translateX(-100%);
@@ -39,17 +36,16 @@
                 background-color: white;
                 z-index: 1000;
             }
-
             .mobile-menu.hidden {
                 transform: translateX(100%);
             }
         }
-
+        
         .dropdown {
             float: left;
             overflow: hidden;
         }
-
+        
         .dropdown .dropbtn {
             font-size: 16px;
             border: none;
@@ -62,7 +58,7 @@
             display: flex;
             align-items: center;
         }
-
+        
         .dropdown .dropbtn .caret {
             margin-left: 8px;
             border: solid white;
@@ -71,7 +67,7 @@
             padding: 3px;
             transform: rotate(45deg);
         }
-
+        
         .dropdown-content {
             display: none;
             position: absolute;
@@ -80,7 +76,7 @@
             box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
             z-index: 1;
         }
-
+        
         .dropdown-content a {
             float: none;
             color: black;
@@ -89,18 +85,18 @@
             display: block;
             text-align: left;
         }
-
+        
         .dropdown-content a:hover {
             background-color: #ddd;
         }
-
+        
         .dropdown:hover .dropdown-content {
             display: block;
         }
-
+        
         .font-bold {
-  font-weight: 10000; 
-}
+            font-weight: 10000;
+        }
     </style>
 
 </head>
@@ -108,19 +104,25 @@
 <body class="bg-gray-100">
 
     <!-- Navigation Bar -->
-    <nav class="z-50 bg-white shadow-lg fixed top-0 w-full">
-        <div class="container mx-auto flex justify-between items-center p-4">
-            <div class="nav-links hidden md:flex justify-center items-center">
-                <ul class="flex space-x-10">
-                    <li><a class="text-xl text-gray-700 hover:text-gray-900 transition duration-300 font-bold" href="index.html">Home</a></li>
+    <nav class="sticky top-0 z-50 bg-white shadow-lg">
+        <div class="bg-white">
+            <div class="container mx-auto p-4 ">
+                <div class="nav-links ">
+                    <ul class="flex space-x-6">
+                        <li><a class="text-2xl text-gray-700 hover:text-gray-900 transition duration-300 " href="index.html">Home</a></li>
+                        <li><a class="text-2xl text-gray-700 hover:text-gray-900 transition duration-300 " href="committee.html">Committee</a></li>
+                        <li class="relative group">
+                            <a class="text-2xl text-gray-700 hover:text-gray-900 transition duration-300" href="#">Sponsor</a>
+                            <div class="dropdown-content hidden group-hover:block absolute bg-white shadow-lg mt-1">
+                                <a class="text-xl block px-4 py-2 text-gray-700 hover:bg-gray-100" href="sponsor-category1.html">Sponsors</a>
+                                <a class="text-xl block px-4 py-2 text-gray-700 hover:bg-gray-100" href="sponsor-category2.html">Call for Sponsors</a>
 
-                    <li><a class="text-2xl text-gray-700 hover:text-gray-900 transition duration-300 font-bold" href="committee.html">Committee</a></li>
-                    <li><a class="text-2xl text-gray-700 hover:text-gray-900 transition duration-300 font-bold" href="sponsors.html">Sponsors</a></li>
-                    <li class="relative group">
-                        <div class="dropdown">
-                            <a class="text-2xl text-gray-700 hover:text-gray-900 transition duration-300 flex items-center">
+                            </div>
+                        </li>
+                        <li class="relative group">
+                            <a class="text-2xl text-gray-700 hover:text-gray-900 transition duration-300 flex items-center" href="#">
                                 Author Guidelines
-                                <svg class="w-6 h-6 ml-1 text-gray-500 group-hover:text-gray-700 transition duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <svg class="w-6 h-6 ml-1 text-gray-500 group-hover:text-gray-700 transition duration-300 dropdown-indicator" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
                                 </svg>
                             </a>
@@ -128,29 +130,32 @@
                                 <a class="text-xl block px-4 py-2 text-gray-700 hover:bg-gray-100" href="CallforPapers.html">Call For Papers</a>
                                 <a class="text-xl block px-4 py-2 text-gray-700 hover:bg-gray-100" href="Important Dates.html">Important Dates</a>
                                 <a class="text-xl block px-4 py-2 text-gray-700 hover:bg-gray-100" href="PaperSubmission.html">Paper-Submission</a>
-                                <a class="text-xl block px-4 py-2 text-gray-700 hover:bg-gray-100" href="ProgramSchedule.html">Program Shedule</a>
-                                <a class="text-xl block px-4 py-2 text-gray-700 hover:bg-gray-100" href="siteseeing.html">Places to Visit</a>
-                                <a class="text-xl block px-4 py-2 text-gray-700 hover:bg-gray-100" href="Accomadation.html">Accomodation</a>
-                              
+                                <a class="text-xl block px-4 py-2 text-gray-700 hover:bg-gray-100" href="ProgramSchedule.html">Program Schedule</a>
+                                <a class="text-xl block px-4 py-2 text-gray-700 hover:bg-gray-100" href="siteseeing.html">Place to Visit</a>
+                                <a class="text-xl block px-4 py-2 text-gray-700 hover:bg-gray-100" href="Accomadation.html">Accommodation</a>
                             </div>
-                        </div>
-                    </li>
-                    <li class="relative group">
-                        <a class="text-2xl text-gray-700 hover:text-gray-900 transition duration-300 font-bold" href="registation.html">Registration</a>
-                    </li>
-                    <li><a class="text-2xl text-gray-700 hover:text-gray-900 transition duration-300 font-bold" href="contacts.html">Contact</a></li>
-                </ul>
-            </div>
-            <div class="mobile-toggler md:hidden">
-                <div class="space-y-2" id="menu-toggle">
-                    <div class="w-8 h-1 bg-gray-700 transition transform duration-300"></div>
-                    <div class="w-8 h-1 bg-gray-700 transition transform duration-300"></div>
-                    <div class="w-8 h-1 bg-gray-700 transition transform duration-300"></div>
+                        </li>
+                        <li class="relative group">
+                            <a class="text-2xl text-gray-700 hover:text-gray-900 transition duration-300" href="registration.html">Registration</a>
+                        </li>
+                        <li><a class="text-2xl text-gray-700 hover:text-gray-900 transition duration-300" href="contacts.html">Contact</a></li>
+                    </ul>
+
                 </div>
             </div>
         </div>
-        <div class="mobile-menu fixed inset-0 bg-black bg-opacity-50 w-full h-full hidden transform -translate-x-full transition-transform duration-300 ease-in-out z-50">
-            <div class="bg-white w-2/4 h-full p-6">
+
+        <div class="mobile-toggler md:hidden p-4">
+            <div class="space-y-2" id="menu-toggle">
+                <div class="w-8 h-1 bg-gray-700 transition transform duration-300"></div>
+                <div class="w-8 h-1 bg-gray-700 transition transform duration-300"></div>
+                <div class="w-8 h-1 bg-gray-700 transition transform duration-300"></div>
+            </div>
+        </div>
+
+        <!-- Mobile view Navbar  -->
+        <div id="mobile-menu" class="mobile-menu fixed inset-0 bg-black bg-opacity-50 w-full h-full hidden transform -translate-x-full transition-transform duration-300 ease-in-out z-50">
+            <div id="menu-content" class="bg-white w-2/4 sm:w-2/4 h-full p-6">
                 <div class="flex justify-end">
                     <div id="menu-close" class="cursor-pointer">
                         <svg class="w-10 h-10" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
@@ -159,24 +164,23 @@
                     </div>
                 </div>
                 <ul class="space-y-6 flex flex-col mt-2">
-                    <li><a class="text-xl text-gray-700 hover:text-gray-900 transition duration-300 font-bold" href="index.html">Home</a></li>
+                    <li><a class="text-xl text-gray-700 hover:text-gray-900 transition duration-300 bold" href="index.html">Home</a></li>
                     <li><a class="text-xl text-gray-700 hover:text-gray-900 transition duration-300" href="committee.html">Committee</a></li>
                     <li><a class="text-xl text-gray-700 hover:text-gray-900 transition duration-300" href="sponsors.html">Sponsors</a></li>
                     <li class="relative group">
-                        <a class="text-2xl text-gray-700 hover:text-gray-900 transition duration-300 flex items-center font-bold" href="#">
+                        <a class="text-xl text-gray-700 hover:text-gray-900 transition duration-300 flex items-center">
                             Author Guidelines
-                            <svg class="w-6 h-6 ml-1 text-gray-500 group-hover:text-gray-700 transition duration-300 dropdown-indicator" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <svg class="w-6 h-6 ml-1 text-gray-500 group-hover:text-gray-700 transition duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
                             </svg>
                         </a>
                         <div class="dropdown-content hidden group-hover:block absolute bg-white shadow-lg mt-1">
                             <a class="text-lg block px-4 py-2 text-gray-700 hover:bg-gray-100" href="CallforPapers.html">Call For Papers</a>
                             <a class="text-lg block px-4 py-2 text-gray-700 hover:bg-gray-100" href="Important Dates.html">Important Dates</a>
-                            <a class="text-lg block px-4 py-2 text-gray-700 hover:bg-gray-100" href="PaperSubmission.html">Paper-Submission</a>
-                            <a class="text-lg block px-4 py-2 text-gray-700 hover:bg-gray-100" href="ProgramSchedule.html">Program Shedule</a>
-                            <a class="text-lg block px-4 py-2 text-gray-700 hover:bg-gray-100" href="siteseeing.html">Places to Visit</a>
-                            <a class="text-lg block px-4 py-2 text-gray-700 hover:bg-gray-100" href="Accomadation.html">Accomodation</a>
-                          
+                            <a class="text-lg block px-4 py-2 text-gray-700 hover:bg-gray-100" href="PaperSubmission.html">Paper Submission</a>
+                            <a class="text-lg block px-4 py-2 text-gray-700 hover:bg-gray-100" href="ProgramSchedule.html">Program Schedule</a>
+                            <a class="text-lg block px-4 py-2 text-gray-700 hover:bg-gray-100" href="siteseeing.html">Place to Visit</a>
+                            <a class="text-lg block px-4 py-2 text-gray-700 hover:bg-gray-100" href="Accommodation.html">Accommodation</a>
                         </div>
                     </li>
                     <li><a class="text-xl text-gray-700 hover:text-gray-900 transition duration-300" href="registration.html">Registration</a></li>
@@ -184,11 +188,15 @@
                 </ul>
             </div>
         </div>
+
+
+
     </nav>
 
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
     <script src="https://cdn.tailwindcss.com"></script>
+    <script src="/main.js"></script>
 </body>
 
 </html>

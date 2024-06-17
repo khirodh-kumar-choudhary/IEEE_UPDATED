@@ -1,27 +1,28 @@
-const menuToggle = document.getElementById('menu-toggle');
-const mobileMenu = document.querySelector('.mobile-menu');
-const menuClose = document.getElementById('menu-close');
-let menuOpen = false;
+// const menuToggle = document.getElementById('menu-toggle');
+// const mobileMenu = document.querySelector('.mobile-menu');
+// const menuClose = document.getElementById('menu-close');
+// let menuOpen = false;
 
-menuToggle.addEventListener('click', () => {
-    if (!menuOpen) {
-        mobileMenu.classList.remove('hidden');
-        setTimeout(() => {
-            mobileMenu.classList.remove('-translate-x-full');
-        }, 10);
-        menuToggle.children[0].classList.add('transform', 'rotate-45', 'translate-y-2.5');
-        menuToggle.children[1].classList.add('opacity-0');
-        menuToggle.children[2].classList.add('transform', '-rotate-45', '-translate-y-2.5');
-        menuOpen = true;
-    } else {
-        closeMenu();
-    }
-});
+// menuToggle.addEventListener('click', () => {
+//     if (!menuOpen) {
+//         mobileMenu.classList.remove('hidden');
+//         setTimeout(() => {
+//             mobileMenu.classList.remove('-translate-x-full');
+//         }, 10);
+//         menuToggle.children[0].classList.add('transform', 'rotate-45', 'translate-y-2.5');
+//         menuToggle.children[1].classList.add('opacity-0');
+//         menuToggle.children[2].classList.add('transform', '-rotate-45', '-translate-y-2.5');
+//         menuOpen = true;
+//     } else {
+//         closeMenu();
+//     }
+// });
 document.addEventListener('DOMContentLoaded', function() {
     const mobileMenu = document.getElementById('mobile-menu');
     const menuContent = document.getElementById('menu-content');
     const menuClose = document.getElementById('menu-close');
-    const menuToggle = document.getElementById('menu-toggle');
+    const menuToggle = document.getElementById('menu-toggle'); // Assuming you have a button with this ID to open the menu
+
     menuToggle.addEventListener('click', function() {
         mobileMenu.classList.remove('-translate-x-full');
         mobileMenu.classList.remove('hidden');
@@ -41,9 +42,12 @@ document.addEventListener('DOMContentLoaded', function() {
         mobileMenu.classList.add('-translate-x-full');
         setTimeout(() => {
             mobileMenu.classList.add('hidden');
-        }, 300);
+        }, 300); // Match the duration of your transition
     }
 });
+
+
+
 
 
 const countDownDate = new Date("December 19, 2024 15:37:25").getTime();

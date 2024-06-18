@@ -83,29 +83,31 @@ body {
 }
 
 .contact-item i {
-    font-size: 2em;
+    font-size: 1.5rem;
     color: #333;
     margin-bottom: 10px;
 }
 
 .contact-item h3 {
-    font-size: 20px; /* Adjust contact item heading font size */
-    margin-bottom: 5px; /* Add space below contact item headings */
+    font-size: 20px;
+    margin-bottom: 5px;
 }
 
-.contact-item p {
-    font-size: 16px; /* Adjust contact item paragraph font size */
-    line-height: 1.6; 
-    color: #666;
-}
 .contact-item a {
-    color: #007bff; /* Link color */
-    text-decoration: none; /* Remove underline */
-    font-weight: bold; /* Make links bold */
+    color: #007bff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.contact-item>p {
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 1.6;
+    color: black;
 }
 
 .contact-item a:hover {
-    text-decoration: underline; /* Add underline on hover */
+    text-decoration: underline;
 }
 
 .mobile-toggler .fa-bars,
@@ -191,68 +193,80 @@ body {
     display: block;
 }
 
-    .ffbox {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        padding: 20px; /* Add padding to the container */
+.ffbox {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px;
+    /* Add padding to the container */
     box-sizing: border-box;
-    }
+}
 
-    .ffbox1 {
-        flex: 1 1 100%; /* Adjust flex properties as needed */
-    max-width: 600px; /* Set maximum width for better responsiveness */
+.ffbox1 {
+    flex: 1 1 100%;
+    /* Adjust flex properties as needed */
+    max-width: 600px;
+    /* Set maximum width for better responsiveness */
     padding: 20px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    margin: 0 auto 20px; /* Center align and add bottom margin */
+    margin: 0 auto 20px;
+    /* Center align and add bottom margin */
     background-color: #fff;
-    }
+}
 
-    .ffbox1 h1 {
-        text-align: center; /* Center align the heading */
-        font-size: 28px; /* Adjust heading font size */
-        margin-bottom: 10px; /* Add space below the heading */
-    }
-    .ffbox1 p {
-        text-align: center; /* Center align paragraphs */
-        font-size: 16px; /* Adjust paragraph font size */
-        margin-bottom: 20px; /* Add space below paragraphs */
-    }
-    .ffbox1 h2 {
-        text-align: center;
-    }
+.ffbox1 h1 {
+    text-align: center;
+    /* Center align the heading */
+    font-size: 28px;
+    /* Adjust heading font size */
+    margin-bottom: 10px;
+    /* Add space below the heading */
+}
 
-    .ffbox1 label {
-        display: block;
-        margin-bottom: 8px;
-        font-weight: bold;
-    }
+.ffbox1 p {
+    text-align: center;
+    /* Center align paragraphs */
+    font-size: 16px;
+    /* Adjust paragraph font size */
+    margin-bottom: 20px;
+    /* Add space below paragraphs */
+}
 
-    .ffbox1 input,
-    .ffbox1 textarea {
-        width: 100%;
-        padding: 10px;
-        margin-bottom: 16px;
-        border-radius: 5px;
-        border: 1px solid #ccc;
-        background-color: #f9f9f9;
-        box-sizing: border-box;
-    }
+.ffbox1 h2 {
+    text-align: center;
+}
 
-    .ffbox1 textarea {
-        resize: vertical;
-    }
+.ffbox1 label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+}
 
-    button {
-        width: 100%;
-        padding: 10px;
-        border: none;
-        border-radius: 5px;
-        background-color: #007bff;
-        color: #fff;
-        font-size: 16px;
-        cursor: pointer;
-    }
+.ffbox1 input,
+.ffbox1 textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 16px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    background-color: #f9f9f9;
+    box-sizing: border-box;
+}
+
+.ffbox1 textarea {
+    resize: vertical;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #007bff;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+}
 
 .submit-btn {
     background-color: #0056b3;
@@ -412,9 +426,12 @@ button:hover {
     box-shadow: 0 0 20px 0px rgba(186, 16, 16, 0.2);
 }
 
+
 /* Optional: Responsive design */
+
 @media (max-width: 768px) {
     .ffbox1 {
-        max-width: 100%; /* Adjust max width for smaller screens */
+        max-width: 100%;
+        /* Adjust max width for smaller screens */
     }
 }

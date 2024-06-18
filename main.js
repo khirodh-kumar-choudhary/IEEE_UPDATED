@@ -44,6 +44,19 @@ document.addEventListener('DOMContentLoaded', function() {
         }, 300);
     }
 });
+document.addEventListener('DOMContentLoaded', function() {
+    const track = document.querySelector('.carousel-track');
+    const items = document.querySelectorAll('.carousel-item');
+
+    let currentIndex = 0;
+
+    setInterval(() => {
+        currentIndex = (currentIndex + 1) % 3;
+        track.style.transform = `translateX(-${currentIndex * 100}%)`;
+    }, 3000);
+});
+
+
 
 
 const countDownDate = new Date("December 19, 2024 15:37:25").getTime();

@@ -43,7 +43,7 @@
                 </div>
             </div>
             <div class="iee-logo hidden md:block">
-                <img src="assets/LOGO_Updated1.png.jpg" alt="iee-logo" class="h-24 md:h-32 w-auto object-fit-cover">
+                <img src="assets/combined_logo.jpg" alt="iee-logo" class="h-32 md:h-48 w-auto object-fit-cover">
                 <!-- <h2 class="text-xs md:text-lg font-semibold text-blue-900">IEEE SCOPES 2024</h2> -->
             </div>
 
@@ -251,7 +251,7 @@
                         <img src="assets/Speakers/AMIT MISHRA.jpg" alt="Speaker 2" class="h-48 w-48 object-cover rounded-full mx-auto mb-4 cursor-pointer" data-modal="modal-2" />
                         <h3 class="text-xl font-semibold">Prof. Amit Mishra, </h3>
                         <p class="text-gray-600">Aberydtengyth University, Sweden</p>
-                        <button id="naeem" type="button" class="btn btn-primary btn-lg bg-blue-900 text-white py-0 px-2 rounded">See More</button>
+                        <button id="amit" type="button" class="btn btn-primary btn-lg bg-blue-900 text-white py-0 px-2 rounded">See More</button>
                     </div>
                     <div id="modal-2" class="modal hidden absolute bg-white p-4 rounded shadow-lg bottom-0 left-1/2 transform -translate-x-1/2 mt-12 z-20">
                         <h3 class="text-lg font-semibold">Prof. Amit Mishra</h3>
@@ -275,7 +275,7 @@
                         <img src="./assets/ieee_tapan.png" alt="Speaker 4" class="h-48 w-48 object-cover rounded-full mx-auto mb-4 cursor-pointer" data-modal="modal-4" />
                         <h3 class="text-xl font-semibold">Prof. Tapan K. Gandhi</h3>
                         <p class="text-gray-600">IIT, Delhi</p>
-                        <button id="naeem" type="button" class="btn btn-primary btn-lg bg-blue-900 text-white py-0 px-2 rounded">See More</button>
+                        <button id="tapan" type="button" class="btn btn-primary btn-lg bg-blue-900 text-white py-0 px-2 rounded">See More</button>
                     </div>
                     <div id="modal-4" class="modal hidden absolute bg-white p-4 rounded shadow-lg bottom-0 left-1/2 transform -translate-x-1/2 mt-12 z-20">
                         <h3 class="text-lg font-semibold">Prof. Tapan K. Gandhi</h3>
@@ -450,7 +450,7 @@
                             </li>
 
                             <li>
-                                <a href="registation.html " class="text-gray-700 transition hover:opacity-75 text-xl ">
+                                <a href="registration.html " class="text-gray-700 transition hover:opacity-75 text-xl ">
                    Registration
                   </a>
                             </li>
@@ -668,6 +668,23 @@
         document.getElementById("naeem").addEventListener("click", function() {
             window.location.href = "speakers.html";
         });
+
+    });
+
+
+    document.addEventListener("DOMContentLoaded", function() {
+        document.getElementById("amit").addEventListener("click", function() {
+            window.location.href = "speaker2.html";
+        });
+
+    });
+
+
+    document.addEventListener("DOMContentLoaded", function() {
+        document.getElementById("tapan").addEventListener("click", function() {
+            window.location.href = "speaker3_tkn.html";
+        });
+
     });
 
     </script>

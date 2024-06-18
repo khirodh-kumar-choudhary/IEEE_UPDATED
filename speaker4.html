@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="assets/LOGO_Updated.png" type="image/x-icon">
+    <title>Key Note Speakers</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+   
+</head>
+
+<body>
+
+    <nav class="sticky top-0  bg-white shadow-lg">
+        <div class="mx-auto flex justify-between items-center p-4">
+            <div class="nav-links hidden md:flex justify-center items-center px-20">
+                <ul class="flex space-x-10">
+                    <li><a class="text-2xl text-gray-700 hover:text-gray-900 transition duration-300 left-10 font-bold" href="index.html">Back to Home</a></li>
+                   
+                </ul>
+            </div>
+            <div class="mobile-toggler md:hidden">
+                <div class="space-y-2" id="menu-toggle">
+                    <div class="w-8 h-1 bg-gray-700 transition transform duration-300"></div>
+                    <div class="w-8 h-1 bg-gray-700 transition transform duration-300"></div>
+                    <div class="w-8 h-1 bg-gray-700 transition transform duration-300"></div>
+                </div>
+            </div>
+        </div>
+        <div class="mobile-menu fixed inset-0 bg-black bg-opacity-50 w-full h-full hidden transform -translate-x-full transition-transform duration-300 ease-in-out z-50">
+            <div class="bg-white w-2/4 h-full p-6">
+                <div class="flex justify-end">
+                    <div id="menu-close" class="cursor-pointer">
+                        <svg class="w-10 h-10" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+                            </svg>
+                    </div>
+                </div>
+                <ul class="space-y-6 flex flex-col mt-2">
+                    <li><a class="text-xl text-gray-700 hover:text-gray-900 transition duration-300" href="index.html">Back to Home</a></li>
+                   
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="container mx-auto py-8 px-4 sm:px-0">
+        <h1 class="text-4xl font-bold text-center mb-8">Prof. G. Panda</h1>
+        <div class="line w-full h-1 mx-auto bg-black"></div>
+        <div class="p-6 flex flex-col md:flex-row items-center justify-center">
+            <div class="md:w-1/4 flex flex-col items-center md:items-center">
+                <img src="./assets/Speakers/ganpati.jpg" alt="Speaker 1" class="w-40 h-40 object-cover rounded-lg mb-4">
+                <h3 class="text-lg font-semibold text-center md:text-left">Prof. G. Panda</h3>
+                <p class="text-gray-700 text-center md:text-left text-justify">Professor and Research Advisor, C. V. Raman Global University & Former Deputy Director, IIT Bhubaneswar </p>
+              
+            </div>
+          
+            <div class="md:w-3/4 mt-4 md:mt-0 md:pl-6">
+             
+                <p class="text-gray-900 text-justify">
+                    Ganapati Panda (Senior Life Member, IEEE) is currently working as a Professor and Research Advisor at C V Raman Global University-Odisha, Bhubaneswar, India. 
+                    Professor Panda served as the Deputy Director, Dean (Academic Affairs), and Head, School of Electrical Sciences at the Indian Institute of Technology, Bhubaneswar. 
+                    He was also Dean (Administration) at the National Institute of Technology, Rourkela. He was a member of the Board of Governors of IIT Bhubaneswar and NIT Rourkela. 
+                    Dr. Panda also served as Director of the National Institute of Technology, Jamshedpur. He worked for 48 years in teaching and research in leading technical institutions in India. 
+                    He did his Post-Doctoral research work at the University of Edinburgh, UK (1984-86), and Ph. D. (1981) from IIT, Kharagpur in Digital Signal Processing. 
+                    He has guided 45 Ph.Ds . He has published more than 516 research papers in 306 referred Journals and 210 Conferences with 13980 citations, h-index of 56, and i10-index of 216 as of 15th June 2024.
+                     He listed under Top 2% Scientist of the world from the Stanford University in the area of AI&ML (2021, 2022, 2023) for significant contribution to engineering, education, and research. He is a Senior Member of IEEE, Fellow of IET,
+                      Fellow of IETE, Fellow of IE, Life Member of CSI, Life Member of ISTE, and a Life Member of System Society. He is a regular reviewer of
+                     many international journals. His research interests are in the areas of Artificial Intelligence, Machine Learning, Digital Signal Processing, Digital Communication, and Intelligent Instrumentation.</p>
+                <br>
+                <h2 class="text-2xl font-bold mb-4">Title of the Talk: <br> 'Recent Advances in Signal Processing and Communication'</h2>
+                <p class="text-gray-900 text-justify">
+                   <br>
+                   <h2 class="text-2xl font-bold mb-4">Abstract</h2>
+                   The talk covers recent advances in Signal Processing and Communication. The potential application areas of these two important aspects of Electronics will also be presented.
+                    The talk will deal fixed, adaptive, intelligent and distributed signal processing techniques.
+                     The various application areas will include: bio-medical engineering, active noise control, hearing aid, natural language processing, intelligent sensors, 
+                     compressive sensing etc. In the field of communication, sensor networks, cognitive radio and 5G/6G communication will be presented. 
+                     The recent optimization techniques will also be dealt during the course of the talk.
+                    In essence, the talk will be useful to faculty members and senior students, PhD scholars and those who are interested for research work in these areas.
+                   
+                </p>
+            </div>
+        </div>
+        <div class="line w-full h-1 mx-auto bg-black"></div>
+        </div>
+      
+        
+    </div>
+
+ 
+    </section>
+    <hr>
+
+    <div id="footer-placeholder"></div>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            $("#header-placeholder").load("header.html");
+            $("#footer-placeholder").load("footer.html");
+        });
+    </script>
+</body>
+
+</html>

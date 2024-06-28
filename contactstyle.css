@@ -1,5 +1,4 @@
 /* Base styles */
-
 * {
     margin: 0;
     padding: 0;
@@ -20,13 +19,15 @@ body {
 }
 
 .text-box {
-    width: 90%;
+    width: 100%;
     color: #fff;
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center;
+    padding: 0 20px;
+    box-sizing: border-box;
 }
 
 .text-box h1 {
@@ -70,9 +71,11 @@ body {
 
 .contact-info {
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px; /* Adjust the gap between items */
+    padding: 0 20px; /* Added padding to the container to reduce excess space */
+    box-sizing: border-box; /* Ensure padding is included in the width */
 }
 
 .contact-item {
@@ -82,45 +85,52 @@ body {
     max-width: 300px;
 }
 
-.contact-item1 {
+.contact-item1,
+.contact-item2,
+.contact-item3,
+.contact-item4 {
+    flex: 1 1 calc(50% - 40px); /* Two items per row, considering the gap */
+    max-width: calc(70% - 30px); /* Ensure max-width is same as flex basis */
+    margin: 10px;
+    box-sizing: border-box;
     border: 2px solid #071478;
     padding: 15px;
-    margin: 10px 0;
     border-radius: 5px;
     color: white;
     font-weight: bold;
-    width: 300px;
-    height: 150px;
-    box-sizing: border-box;
     background-color: #071478;
-    /* Light blue background color */
 }
 
-.contact-item2 {
-    border: 2px solid #071478;
-    padding: 15px;
-    margin: 10px 0;
-    border-radius: 5px;
-    font-weight: bold;
-    color: white;
-    width: 300px;
-    height: 150px;
-    box-sizing: border-box;
-    background-color: #071478;
-    /* Light blue background color */
+@media (max-width: 768px) {
+    .contact-item1,
+    .contact-item2,
+    .contact-item3,
+    .contact-item4 {
+        flex: 1 1 calc(50% - 20px); /* Adjust for smaller screens */
+        max-width: calc(50% - 20px); /* Adjust max-width for smaller screens */
+    }
 }
 
-.contact-item3 {
-    border: 2px solid #071478;
-    padding: 15px;
-    margin: 10px 0;
-    font-weight: bold;
-    border-radius: 5px;
-    color: white;
-    width: 300px;
+
+
+/* Ensuring the original styles are applied */
+.contact-item1,
+.contact-item2,
+.contact-item3,
+.contact-item4 {
     height: 150px;
-    box-sizing: border-box;
-    background-color: #071478;
+}
+
+/* Adjustments for smaller screens */
+@media (max-width: 768px) {
+    .contact-item,
+    .contact-item1,
+    .contact-item2,
+    .contact-item3,
+    .contact-item4 {
+        flex: 1 1 100%;
+        max-width: 100%;
+    }
 }
 
 .text-white {

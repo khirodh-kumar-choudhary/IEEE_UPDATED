@@ -83,14 +83,16 @@ body {
     flex-direction: column;
     align-items: center;
     max-width: 300px;
+    
 }
 
 .contact-item1,
 .contact-item2,
 .contact-item3,
 .contact-item4 {
+    
     flex: 1 1 calc(50% - 40px); /* Two items per row, considering the gap */
-    max-width: calc(70% - 30px); /* Ensure max-width is same as flex basis */
+    max-width: calc(70% - 40px); /* Ensure max-width is same as flex basis */
     margin: 10px;
     box-sizing: border-box;
     border: 2px solid #071478;
@@ -269,7 +271,7 @@ body {
 .ffbox1 {
     flex: 1 1 100%;
     /* Adjust flex properties as needed */
-    max-width: 600px;
+    max-width: 800px;
     /* Set maximum width for better responsiveness */
     padding: 20px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -362,7 +364,7 @@ button:hover {
     height: 100%;
     position: absolute;
     top: 0;
-    left: 0;
+    left: 0%;
 }
 
 .map-div iframe {

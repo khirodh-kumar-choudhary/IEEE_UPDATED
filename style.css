@@ -271,3 +271,33 @@ ul.flex li a:hover::after {
 .dropdown:hover .dropdown-content {
     display: block;
 }
+
+
+/* 
+Extra carosel */
+.carousel-imagee {
+    height: 20rem;
+    /* Fixed height for all carousel images */
+    display: block;
+    margin: 0;
+    /* Removes any default margin */
+    width: 100%;
+    padding: 0;
+    /* Ensure no padding */
+}
+
+.carousel-containerr {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+}
+
+.carousel-trackk {
+    display: flex;
+    transition: transform 0.5s ease;
+}
+
+.carousel-itemm {
+    flex: 0 0 auto;
+    width: 100%;
+}

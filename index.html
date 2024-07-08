@@ -326,17 +326,17 @@
 
                 <div class="w-full md:w-1/2 p-4">
                     <div class="relative overflow-hidden">
-                        <div class="carousel-container relative">
-                            <div class="carousel-track w-full flex">
-                                <div class="carousel-item w-full">
-                                    <img src="assets/CUTM_main.jpg" alt="Image 1" class="carousel-image w-full h-full object-cover rounded">
+                        <div class="carousel-containerr relative">
+                            <div class="carousel-trackk w-full flex">
+                                <div class="carousel-itemm w-full">
+                                    <img src="assets/CUTM_main.jpg" alt="Image 1" class="carousel-imagee w-full h-full object-cover rounded">
                                 </div>
-                                <div class="carousel-item w-full">
-                                    <img src="assets/fountain.jpg" alt="About Image 2" class="carousel-image w-full h-full object-cover rounded-lg">
+                                <div class="carousel-itemm w-full">
+                                    <img src="assets/fountain.jpg" alt="About Image 2" class="carousel-imagee w-full h-full object-cover rounded-lg">
                                 </div>
                             
-                                <div class="carousel-item w-full">
-                                    <img src="assets/Carosel2.JPG" alt="About Image 3" class="carousel-image w-full h-full object-cover rounded-lg">
+                                <div class="carousel-itemm w-full">
+                                    <img src="assets/Carosel2.JPG" alt="About Image 3" class="carousel-imagee w-full h-full object-cover rounded-lg">
                                 </div>
                         
                             </div>
@@ -404,14 +404,14 @@
                     </ul>
                 </div>
                 <div class="md:w-1/2 mt-8 md:mt-0 md:ml-8">
-                    <img src="assets/dept.jpg" alt="About Image" class="w-full h-auto">
+                    <img src="assets/dept.jpg" alt="About Image" class="w-full h-auto" style="border-radius: 4px;"   > 
                 </div>
             </div>
         </div>
     </section>
 
     <section id="about" class="about bg-white py-12">
-        <div class="container mx-auto ">
+        <div class="container mx-auto">
             <h2 class="text-center text-3xl font-semibold mb-8 text-blue-900"> SCOPES-2024</h2>
             <div class="flex flex-col md:flex-row items-center md:items-start">
                 <div class="w-full md:w-1/2 p-4">
@@ -768,6 +768,40 @@
 
     });
     </script>
+
+
+
+
+<!-- Script for the centurion university About carosel  -->
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        const track = document.querySelector('.carousel-trackk');
+        const items = Array.from(track.children);
+        const itemCount = items.length;
+        let currentIndex = 0;
+    
+        function moveToItem(index) {
+            const amountToMove = -items[index].getBoundingClientRect().width * index;
+            track.style.transform = `translateX(${amountToMove}px)`;
+            currentIndex = index;
+        }
+    
+        function moveToNextItem() {
+            if (currentIndex < itemCount - 1) {
+                moveToItem(currentIndex + 1);
+            } else {
+                moveToItem(0);
+            }
+        }
+    
+        setInterval(moveToNextItem, 3000); 
+    });
+    </script>
+    
+
+
+
+
 
 </body>
 

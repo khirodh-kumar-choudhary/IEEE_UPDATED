@@ -70,6 +70,7 @@ body {
 }
 
 .contact-info {
+    width: 100%;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -82,17 +83,19 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    max-width: 300px;
+    max-width: 400px;
     
 }
 
 .contact-item1,
 .contact-item2,
 .contact-item3,
-.contact-item4 {
+.contact-item4,
+.contact-item5 {
     
     flex: 1 1 calc(50% - 40px); /* Two items per row, considering the gap */
-    max-width: calc(70% - 40px); /* Ensure max-width is same as flex basis */
+    max-width: calc(70% - 50px); /* Ensure max-width is same as flex basis */
+    width: 1000px;
     margin: 10px;
     box-sizing: border-box;
     border: 2px solid #071478;
@@ -102,6 +105,7 @@ body {
     font-weight: bold;
     background-color: #071478;
 }
+
 
 @media (max-width: 768px) {
     .contact-item1,

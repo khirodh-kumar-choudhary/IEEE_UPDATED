@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="assets/LOGO_Updated.png" type="image/x-icon">
+    <title>Key Note Speakers</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+   
+</head>
+
+<body>
+
+    <nav class="sticky top-0  bg-white shadow-lg">
+        <div class="mx-auto flex justify-between items-center p-4">
+            <div class="nav-links hidden md:flex justify-center items-center px-20">
+                <ul class="flex space-x-10">
+                    <li><a class="text-2xl text-gray-700 hover:text-gray-900 transition duration-300 left-10 font-bold" href="index.html">Back to Home</a></li>
+                   
+                </ul>
+            </div>
+            <div class="mobile-toggler md:hidden">
+                <div class="space-y-2" id="menu-toggle">
+                    <div class="w-8 h-1 bg-gray-700 transition transform duration-300"></div>
+                    <div class="w-8 h-1 bg-gray-700 transition transform duration-300"></div>
+                    <div class="w-8 h-1 bg-gray-700 transition transform duration-300"></div>
+                </div>
+            </div>
+        </div>
+        <div class="mobile-menu fixed inset-0 bg-black bg-opacity-50 w-full h-full hidden transform -translate-x-full transition-transform duration-300 ease-in-out z-50">
+            <div class="bg-white w-2/4 h-full p-6">
+                <div class="flex justify-end">
+                    <div id="menu-close" class="cursor-pointer">
+                        <svg class="w-10 h-10" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+                            </svg>
+                    </div>
+                </div>
+                <ul class="space-y-6 flex flex-col mt-2">
+                    <li><a class="text-xl text-gray-700 hover:text-gray-900 transition duration-300" href="index.html">Back to Home</a></li>
+                   
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="container mx-auto py-8 px-4 sm:px-0">
+        <h1 class="text-4xl font-bold text-center mb-8"></h1>
+        <div class="line w-full h-1 mx-auto bg-black"></div>
+        <div class="p-6 flex flex-col md:flex-row items-center justify-center">
+            <div class="md:w-1/4 flex flex-col items-center md:items-center">
+                <img src="./assets/Speakers/SAFWAN_GHANEM.jpg" alt="Speaker 6" class="w-40 h-40 object-cover rounded-lg mb-4">
+                <h3 class="text-lg font-semibold text-center md:text-left">SAFWAN GHANEM</h3>
+                <p class="text-gray-700 text-center md:text-left justify-center text-center">Software Engineer at Barclays in Prague, Czechia</p>
+              
+            </div>
+          
+            <div class="md:w-3/4 mt-4 md:mt-0 md:pl-6">
+             
+                <p class="text-gray-900 text-justify">
+                    Purna brings in 28 years of experience and expertise in engineering, sales, business development, 
+marketing and operations, and connecting these specialties to build a successful business. His 
+love for Silicon Valley and its technology vibe accompanied by a passion for propagating Silicon 
+Valley’s innovative culture around the world drove him to start MarqueeSemi and SignatureIP 
+with a R&D presence in the 'best kept secret' locations around the world. Prior to founding 
+MarqueeSemi and SignatureIP, Purna held the position of vice president engineering and 
+operation at Tessolve USA. He brings in entrepreneurial vision to his companies – with his 
+experience in co-founding or leading successful start-ups – ASIC Architect, Aims Technology, 
+Kool Chip, Platys Communication, SmartSAN Network. Also, he had provided engineering and 
+operational leadership at established companies – Adaptec, Semtech, Broadcom, NXP and 
+Tessolve. He holds 5 US patents in the area of SoC verification and design. Purna holds a BSEE 
+from NIT Rourkela, India and MSEE from University of Toledo, OH, USA. </p>
+                <br>
+                <h2 class="text-2xl font-bold mb-4">Title of the Talk: <br>  The Art of Custom Silicon Design – India’s need of the hour.</h2>
+                <p class="text-gray-900 text-justify">
+                   <br>
+                   <h2 class="text-2xl font-bold mb-4">Abstract</h2>
+                   <p class="text-gray-900 text-justify"> 
+                    The keynote discusses the future of silicon design, transitioning from monolithic silicon systems 
+to chiplet-based silicon systems.  <br><br>
+It will explore the art of mastering this transition, key technologies involved, and current 
+challenges in the industry. The growing market for chiplet-based systems presents significant 
+opportunities worldwide. <br><br>
+The keynote will elaborate on how India can be positioned to take advantage of this opportunity 
+with a cohesive ecosystem of fabless semiconductor startups, universities, and government 
+support.  <br><br>
+It will highlight the critical role of the government in promoting a vibrant, custom silicon design 
+ecosystem.
+                   
+                </p>
+                </p>
+            </div>
+        </div>
+        <div class="line w-full h-1 mx-auto bg-black"></div>
+        </div>
+      
+        
+    </div>
+
+ 
+    </section>
+    <hr>
+
+    <div id="footer-placeholder"></div>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            $("#header-placeholder").load("header.html");
+            $("#footer-placeholder").load("footer.html");
+        });
+    </script>
+</body>
+
+</html>

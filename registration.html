@@ -11,6 +11,22 @@
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.css" />
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <style>
+    .blink {
+    animation: blinker 0.5s linear infinite;
+}
+
+.blink:hover {
+    animation: none; 
+}
+
+@keyframes blinker {
+    50% {
+        opacity: 0;
+    }
+}
+
+    </style>
 </head>
 
 <body class="bg-gray-100">
@@ -146,7 +162,7 @@
                        Click here for IEEE PDF eXpress™ 
                     </a>
                 </li>
-                <li>Use conference ID <strong>64467X</strong> when logging into PDF Express.</li>
+                <li>Use conference ID <strong>64467X</strong> when logging into PDF eXpress.</li>
 
                 <li>The camera-ready manuscript must comply with all the requirements of IEEE format, including 4 to 6 pages and a similarity index limited to 20% with reference (Single source similarity, as per rule it must be less than 5%).</li>
                 <li>Upload the camera-ready paper in both .pdf and .doc formats on the CMT portal by <strong>15th Nov 2024</strong>.</li>
@@ -155,7 +171,7 @@
             </ul>
             <br>
             <div class="mt-6 text-center text-xl">
-                <a href="https://forms.gle/2mcS7AFnwR74eZGw6" target="_blank" class="inline-block px-4 py-2 bg-blue-700 text-white font-bold rounded">
+                <a href="https://forms.gle/2mcS7AFnwR74eZGw6" target="_blank" class="inline-block px-4 py-2 bg-blue-700 text-white font-bold rounded blink">
                     👉 Register Here
                 </a>
             </div>

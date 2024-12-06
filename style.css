@@ -10,36 +10,29 @@ body {
     overflow-x: hidden;
 }
 
-
 @keyframes blink {
     50% {
-        opacity: 0;
+        opacity: 0; /* Make it disappear at 50% of the animation */
     }
 }
-.new-badge {
-    color: red; /* Red color for "New" */
-    font-size: 0.8em; /* Smaller font size */
-    animation: blink 1s infinite; /* Blinking animation */
-    font-weight: bold; /* Bold format */
-    vertical-align: super; /* Superscript alignment */
-}
 
-/* Blink effect for Accommodation link */
+/* Apply blinking animation to the entire link */
 .accommodation-link {
-
- 
-    position: relative;
-    right: -5px; /* Move to the right */
-    transition: all 0.3s ease; /* Smooth transition for hover */
+    animation: blink 1s infinite; /* Blinking animation */  
+    text-decoration: none; /* Remove underline */
 }
-
-/* Stop blinking and add hover effect */
 .accommodation-link:hover {
     animation: none; /* Stops blinking */
     color: darkred; /* Slightly darker red on hover */
     right: -15px; /* Moves a bit more to the right */
 }
 
+/* Style the "New" badge */
+.new-badge {
+    font-size: 0.8em; /* Smaller font size for badge */
+    color: rgb(229, 23, 23); /* Slightly darker red on hover */
+    vertical-align: super; /* Superscript alignment */
+}
 /* //navbar fixed  */
 
 .fixed-nav {

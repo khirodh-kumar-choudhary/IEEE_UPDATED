@@ -202,6 +202,147 @@
 
 
 
+
+
+
+
+
+
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #ffffff; /* White background */
+    color: #333333;
+    margin: 0;
+    padding: 0;
+}
+
+.program-title {
+    color: #002244; /* Dark Blue */
+    text-align: center;
+}
+
+.faq-main-header {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #002244;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+/* FAQ Container */
+.faq-container {
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 1rem;
+
+
+}
+
+/* FAQ Header */
+.faq-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #002244; /* Dark Blue */
+    color: #ffffff; /* White Text */
+    padding: 1rem;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-bottom: 0.5rem;
+}
+
+.faq-header h3 {
+    margin: 0;
+}
+
+.toggle-btn {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+/* FAQ Content */
+.faq-content {
+    background-color: #f4f4f4;
+    color: #002244; /* Dark Blue */
+    padding: 1rem;
+    display: none; /* Hidden by default */
+    border-left: 5px solid #002244;
+    border-radius: 5px;
+}
+
+.faq-content ul {
+    list-style-type: disc;
+    margin: 0;
+    padding-left: 2rem;
+}
+
+.faq-content li {
+    margin-bottom: 0.5rem;
+}
+
+/* FAQ Toggle Interaction */
+.faq.open .faq-content {
+    display: block;
+}
+
+
+
+
+
+/* Added Now */
+body {
+            font-family: Arial, sans-serif;
+        }
+        h2, h3 {
+            margin-bottom: 0;
+            text-align: left;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 30px;
+        }
+        th, td {
+            border: 1px solid black;
+            padding: 10px;
+            text-align: center;
+            vertical-align: middle;
+        }
+        th {
+            background-color: #f2f2f2;
+            font-weight: bold;
+        }
+        .keynote {
+            color: green;
+            font-weight: bold;
+        }
+        .speaker {
+            color: red;
+            font-weight: bold;
+        }
+        .highlight {
+            background-color: gold;
+            font-weight: bold;
+        }
+        .session {
+            color: blue;
+            font-weight: bold;
+        }
+        .venue {
+            font-weight: bold;
+        }
+
+
+
+        header {
+    background: #071478;
+    color: #fff;
+    padding: 15px 0;
+    text-align: center;
+    margin-bottom: 20px;
+    border-radius: 10px;
+}
     </style>
 </head>
 <body>
@@ -322,128 +463,255 @@
 
     <div class="container">
         <div class="schedule">
-            <h2 class="text-4xl font-bold" >Program Schedule</h2>
-            <br>
+            <header class="mt-5">
+               
+                <h1 class="text-3xl text-center font-bold">Program Shedule</h1>
+            </header>
+            
+            <!-- <h6 class="text-2xl font-bold text-red-800 text-center">The data will be updated shortly...</h6> -->
+        
+            <div class="faq-container">
+                <h1 class="faq-main-header">Day-wise Programs</h1>
+        
+                <div class="faq">
+                    <div class="faq-header" style="text-align: center;">
+                        <h3 class="text-3xl" style="display: inline-block; margin: 0 auto;">Day 1</h3>
+                        <span class="toggle-btn">+</span>
+                    </div>
+                    
+                    <div class="faq-content">
+                        <h2 class="text-2xl font-bold">Day-1</h2>
+                        <h3 class="font-bold">Date: 19-12-2024</h3>
+                        <table>
+                            <tr>
+                                <th>Time</th>
+                                <th>Program</th>
+                                <th>Venue</th>
+                            </tr>
+                            <tr>
+                                <td>8:30 am – 10:30 am</td>
+                                <td><strong>Registration</strong></td>
+                                <td class="venue">New Admin Block</td>
+                            </tr>
+                            <tr>
+                                <td>10:30 am – 11:30 am</td>
+                                <td><strong>Inaugural Session</strong></td>
+                                <td class="venue">Auditorium</td>
+                            </tr>
+                            <tr class="highlight">
+                                <td>11:30 am – 11:40 am</td>
+                                <td>Tea Break</td>
+                                <td class="venue">Auditorium</td>
+                            </tr>
+                            <tr>
+                                <td>11:40 am – 12:40 pm</td>
+                                <td><span class="keynote">Key Note-1</span> (OFFLINE)<br><span class="speaker">Dr. P. S. R. Srinivasa Sastry</span><br> Founder & Former Director, DSP, DRDO, Hyderabad <br><em> <strong>Topic:</strong> Technological Advances and their impact on Modern Society</em></td>
+                                <td class="venue">Auditorium</td>
+                            </tr>
+                           
+                            <tr>
+                                <td>12:40 pm – 1:40 pm</td>
+                                <td><span class="keynote">Key Note-2</span> (OFFLINE)<br><span class="speaker">Prof. (Dr.) Naeem Hannoon</span><br> University of Teknologi MARA, Sheh Aalm, Malaysia <br><em> <strong>Topic:</strong> Advanced Automation of Substations-latest trends</em></td>
+                                <td class="venue">Auditorium</td>
+                            </tr>
+                            <tr class="highlight">
+                                <td>1:40 pm – 2:30 pm</td>
+                                <td>Working Lunch</td>
+                                <td></td>
+                            </tr>
 
-            <h6 class="text-2xl font-bold text-red-800 text-center" >The data will be updated shortly...</h6>
 
-            <!-- <div class="day">
-                <h3>Day 1</h3>
-                <table>
-                    <tr>
-                        <th>Time</th>
-                        <th>Event</th>
-                        <th>Location</th>
-                    </tr>
-                    <tr>
-                        <td>09:00 AM - 11:00 AM</td>
-                        <td>Registration</td>
-                        <td>Main Hall</td>
-                    </tr>
-                    <tr>
-                        <td>11:00 AM - 01:00 PM</td>
-                        <td>Opening Ceremony</td>
-                        <td>Main Hall</td>
-                    </tr>
-                    <tr>
-                        <td>01:00 PM - 03:00 PM</td>
-                        <td>Keynote Speech</td>
-                        <td>Conference Room A</td>
-                    </tr>
-                    <tr>
-                        <td>03:00 PM - 05:00 PM</td>
-                        <td>Networking Lunch</td>
-                        <td>Dining Area</td>
-                    </tr>
-                    <tr>
-                        <td>05:00 PM - 07:00 PM</td>
-                        <td>Technical Session 1</td>
-                        <td>Conference Room B</td>
-                    </tr>
-                </table>
-            </div> -->
-
-            <!-- <div class="day">
-                <h3>Day 2</h3>
-                <table>
-                    <tr>
-                        <th>Time</th>
-                        <th>Event</th>
-                        <th>Location</th>
-                    </tr>
-                    <tr>
-                        <td>09:00 AM - 11:00 AM</td>
-                        <td>Workshop 1</td>
-                        <td>Conference Room A</td>
-                    </tr>
-                    <tr>
-                        <td>11:00 AM - 01:00 PM</td>
-                        <td>Workshop 2</td>
-                        <td>Conference Room B</td>
-                    </tr>
-                    <tr>
-                        <td>01:00 PM - 03:00 PM</td>
-                        <td>Technical Session 2</td>
-                        <td>Conference Room B</td>
-                    </tr>
-                    <tr>
-                        <td>03:00 PM - 05:00 PM</td>
-                        <td>Networking Lunch</td>
-                        <td>Dining Area</td>
-                    </tr>
-                    <tr>
-                        <td>05:00 PM - 07:00 PM</td>
-                        <td>Round Table Discussion</td>
-                        <td>Conference Room A</td>
-                    </tr>
-                </table>
-            </div> -->
-
-            <!-- <div class="day">
-                <h3>Day 3</h3>
-                <table>
-                    <tr>
-                        <th>Time</th>
-                        <th>Event</th>
-                        <th>Location</th>
-                    </tr>
-                    <tr>
-                        <td>09:00 AM - 11:00 AM</td>
-                        <td>Poster Session</td>
-                        <td>Lobby</td>
-                    </tr>
-                    <tr>
-                        <td>11:00 AM - 01:00 PM</td>
-                        <td>Technical Session 3</td>
-                        <td>Conference Room B</td>
-                    </tr>
-                    <tr>
-                        <td>01:00 PM - 03:00 PM</td>
-                        <td>Workshop 3</td>
-                        <td>Conference Room A</td>
-                    </tr>
-                    <tr>
-                        <td>03:00 PM - 05:00 PM</td>
-                        <td>Networking Lunch</td>
-                        <td>Dining Area</td>
-                    </tr>
-                    <tr>
-                        <td>05:00 PM - 07:00 PM</td>
-                        <td>Closing Ceremony</td>
-                        <td>Main Hall</td>
-                    </tr>
-                </table>
-            </div> -->
-        </div>
-
-        <!-- <div class="pdf-viewer">
-            <h2>Shedule Details</h2>
-            <iframe src="assets/invitation.pdf"></iframe>
-            <div class="pdf-download">
-                <a href="assets/invitation.pdf" download>Download PDF</a>
+                            <tr>
+                                <td rowspan="2">2:30 pm – 3:30 pm</td> 
+                                <td>
+                                    <span class="keynote">Key Note-3</span> (ONLINE)<br>
+                                    <span class="speaker">Dr. Raffaele Scuderi</span><br>
+                                    Industry Process Consultant Specialist at Dassault Systems<br>
+                                    <em><strong>Topic:</strong> 5G Coverage and Channel Simulation in a Complex Industrial Environment</em><br><br>
+                                </td>
+                                <td class="venue">Auditorium</td> 
+                            </tr>
+                            <tr>
+                                <td>
+                                    <span class="keynote">Plenary Session</span> (OFFLINE)<br>
+                                    <span class="speaker">Prof. Subhransu Ranjan Samantaray</span><br>
+                                    Professor, IIT, Bhubaneswar & Vice-President/Chairman, IEEE Bhubaneswar Subsection<br>
+                                </td>
+                                <td class="venue">Seminar Hall-1</td>
+                            </tr>
+                            <tr class="highlight">
+                                <td>3:30 pm – 4:00 pm</td>
+                                <td>High Tea</td>
+                                <td></td>
+                            </tr>
+                            
+                            <tr>
+                                <td>4:00 pm – 6:00 pm</td>
+                                <td><span class="session">Technical Session-1</span></td>
+                                <td>Parallel Paper Presentations in 10 different Venues</td>
+                            </tr>
+                            
+                           
+                            <tr>
+                                <td>7:00 pm – 8:00 pm</td>
+                                <td><span class="venue">Cultural Program</span></td>
+                                <td class="venue">Auditorium</td> 
+                            </tr>
+                            <tr>
+                                <td>8:00 pm – 9:00 pm</td>
+                                <td><span class="venue">Dinner</span></td>
+                                <td></td> 
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+        
+                <div class="faq">
+                    <div class="faq-header" style="text-align: center;">
+                        <h3 class="text-3xl" style="display: inline-block; margin: 0 auto;">Day 2</h3>
+                        <span class="toggle-btn">+</span>
+                    </div>
+                    <div class="faq-content">
+                        <h2 class="text-2xl font-bold">Day-2</h2>
+    <h3 class="font-bold">Date: 20-12-2024</h3>
+    <table>
+        <tr>
+            <th>Time</th>
+            <th>Program</th>
+            <th>Venue</th>
+        </tr>
+        <tr>
+            <td>8:30 am – 9:30 am</td>
+            <td><strong>Registration</strong></td>
+            <td class="venue">New Admin Block</td>
+        </tr>
+        <tr>
+            <td>9:30 am – 10:15 am</td>
+            <td><span class="keynote">Key Note-4</span> (OFFLINE)<br><span class="speaker">Ms. Renuka Srinivasan</span>
+                <br>
+                Director SIMULIA India - Dassault Systems
+                <br>
+                <em><strong>Topic:</strong> Design of Simulation Driven antenna systems for enhanced performance and efficiency.</em><br></td>
+                <td class="venue">Auditorium</td> 
+        </tr>
+        <tr>
+            <td>10:15 am – 11:15 am</td>
+            <td><span class="keynote">Key Note-5</span> (OFFLINE)<br><span class="speaker">Prof. (Dr.) Ganapati Panda</span><br>
+                
+                Former Deputy Director, IIT, Bhubaneswar
+                <br>
+                <em><strong>Topic:</strong> Recent Advances in Signal Processing and Communication</em><br></td>
+                <td class="venue">Auditorium</td>  
+        </tr>
+        <tr class="highlight">
+            <td>11:15 am – 11:30 am</td>
+            <td>Tea Break</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>11:30 am – 1:30 pm</td>
+            <td><span class="session">Technical Session-2</span></td>
+            <td>Parallel Paper Presentations in 10 different Venues</td>
+        </tr>
+        <tr class="highlight">
+            <td>1:30 pm – 2:30 pm</td>
+            <td>Working Lunch</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>2:30 pm – 3:30 pm</td>
+            <td><span class="keynote">Key Note-6</span> (ONLINE)<br><span class="speaker">Mr. Sunil Sabat</span><br>
+                Principal Program Manager, Microsoft Corporations
+                <br>
+                <em><strong>Topic:</strong> Design of data driven modern electronics systems in the era of cloud and AI</em><br></td>
+                <td class="venue">Auditorium</td>  
+        </tr>
+        <tr class="highlight">
+            <td>3:30 pm – 3:45 pm</td>
+            <td>High Tea</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>3:45 pm – 6:00 pm</td>
+            <td class="venue">Local Site Visit</td>
+            <td >Parallel Paper Presentations in 10 different Venues</td>
+        </tr>
+        <tr>
+            <td>7:00 pm – 8:00 pm</td>
+            <td class="venue">Cultural Program followed by Gala Dinner</td>
+            <td >Tribal Village</td>
+        </tr>
+    </table>
+                    </div>
+                </div>
+        
+                <div class="faq">
+                    <div class="faq-header" style="text-align: center;">
+                        <h3 class="text-3xl" style="display: inline-block; margin: 0 auto;">Day 3</h3>
+                        <span class="toggle-btn">+</span>
+                    </div>
+                    <div class="faq-content">
+                        <h2 class="text-2xl font-bold">Day-3</h2>
+                        <h3 class="font-bold">Date: 21-12-2024</h3>
+                        <table>
+                            <tr>
+                                <th>Time</th>
+                                <th>Program</th>
+                                <th>Venue</th>
+                            </tr>
+                            <tr>
+                                <td>8:30 am – 10:00 am</td>
+                                <td><strong>Registration</strong></td>
+                                <td class="venue">New Admin Block</td>
+                            </tr>
+                            <tr>
+                                <td>10:00 am – 11:00 am</td>
+                                <td><span class="keynote">Key Note-7</span> (OFFLINE)<br><span class="speaker">Dr. Jagannath Nayak</span><br>
+                                    
+                                    Director, DRDO, Hyderabad
+                <br>
+                <em><strong>Topic:</strong> The Future Battlefield: Decoding the Invisible War</em><br></td>
+                <td class="venue">Auditorium</td>  
+                            </tr>
+                            <tr class="highlight">
+                                <td>11:00 am – 11:15 am</td>
+                                <td>Tea Break</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>11:15 am – 12:15 pm</td>
+                                <td><span class="keynote">Key Note-8</span> (ONLINE)<br><span class="speaker">Mr. Purna Chandra Mohanty</span><br>
+                                    CEO Marquee Semiconductor
+                <br>
+                <em><strong>Topic:</strong> The Art of Custom Silicon Design – India’s need of the hour.</em><br></td>
+                <td class="venue">Auditorium</td>  
+                            </tr>
+                            <tr>
+                                <td>12:15 pm – 1:30 pm</td>
+                                <td><span class="session">Technical Session-3</span> (If Required)</td>
+                                <td>Parallel Paper Presentations in 10 different Venues</td>
+                            </tr>
+                            <tr class="highlight">
+                                <td>1:30 pm – 2:30 pm</td>
+                                <td>Working Lunch</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>2:30 pm – 3:30 pm</td>
+                                <td class="venue">Valedictory Session</td>
+                                <td class="venue">Auditorium</td> 
+                            </tr>
+                            <tr class="highlight">
+                                <td>3:30 pm – 4:00 pm</td>
+                                <td>High Tea</td>
+                                <td class="venue">Auditorium</td> 
+                            </tr>
+                        </table>
+                    </div>
+                </div>
             </div>
-        </div> -->
-    </div>
+        </div>
+</div>        
   
         <div id="footer-placeholder"></div>
 
@@ -463,6 +731,18 @@
         });
 
     </script>
+
+<script>
+    document.querySelectorAll('.faq-header').forEach(header => {
+        header.addEventListener('click', () => {
+            const faq = header.parentElement;
+            faq.classList.toggle('open');
+            const toggleBtn = header.querySelector('.toggle-btn');
+            toggleBtn.textContent = faq.classList.contains('open') ? '-' : '+';
+        });
+    });
+</script>
+
 
 </body>
 

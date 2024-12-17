@@ -16,6 +16,17 @@ body {
     }
 }
 
+
+.program-schedule {
+    text-decoration: none;
+  
+    font-weight: bold;
+    animation: blink 1s infinite;
+}
+#new{
+    color: red;
+}
+
 /* Apply blinking animation to the entire link */
 .accommodation-link {
     animation: blink 1s infinite; /* Blinking animation */  
